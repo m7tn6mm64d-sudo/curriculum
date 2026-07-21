@@ -21,9 +21,16 @@ Relay payload (posted as the ntfy message body):
   {"kind":"pulse-relay-v1","edition_date":"YYYY-MM-DD","quiet":bool,
    "items":[{"head","link","tag","module","summary","why"}, ...]}
 
+Payload authentication: if the PULSE_RELAY_SECRET env var is set (repo Actions
+secret), payloads must carry sig = sha256(secret + ":" + canonical_json) where
+canonical_json is json.dumps of the payload minus its sig key with sort_keys
+and (',',':') separators. Unsigned/bad-sig payloads are ignored. When the env
+var is absent, sig is not enforced (bootstrap mode) — the relay topic name is
+visible in this public repo, so set the secret to shut out spoofed payloads.
+
 Stdlib only. Fail-closed: on poll failure exit nonzero touching nothing.
 """
-import json, re, urllib.request, datetime, os, sys
+import json, re, urllib.request, datetime, os, sys, hashlib
 
 TOPIC = 'pulse-feed-jkl-x8e2rv7q'
 POLL = 'https://ntfy.sh/%s/json?poll=1&since=13h' % TOPIC
@@ -52,7 +59,8 @@ def poll_relay():
     """
     stub = os.environ.get('PULSE_RELAY_FILE')
     if stub:
-        return json.load(open(stub))
+        payload = json.load(open(stub))
+        return payload if valid(payload) else None
     req = urllib.request.Request(POLL, headers={'User-Agent': 'pulse-pull-action'})
     with urllib.request.urlopen(req, timeout=30) as r:
         lines = r.read().decode('utf-8', 'replace').strip().split('\n')
@@ -65,12 +73,30 @@ def poll_relay():
             payload = json.loads(env.get('message', ''))
         except Exception:
             continue
-        if isinstance(payload, dict) and payload.get('kind') == 'pulse-relay-v1' \
-                and re.match(r'^\d{4}-\d{2}-\d{2}$', str(payload.get('edition_date', ''))):
+        if valid(payload):
             t = env.get('time', 0)
             if t > best_t:
                 best, best_t = payload, t
     return best
+
+
+def valid(payload):
+    return isinstance(payload, dict) and payload.get('kind') == 'pulse-relay-v1' \
+        and re.match(r'^\d{4}-\d{2}-\d{2}$', str(payload.get('edition_date', ''))) \
+        and sig_ok(payload)
+
+
+def sig_ok(payload):
+    secret = os.environ.get('PULSE_RELAY_SECRET', '')
+    if not secret:
+        return True  # bootstrap mode: enforcement starts when the repo secret exists
+    body = {k: v for k, v in payload.items() if k != 'sig'}
+    canon = json.dumps(body, sort_keys=True, separators=(',', ':'))
+    want = hashlib.sha256((secret + ':' + canon).encode()).hexdigest()
+    ok = payload.get('sig') == want
+    if not ok:
+        print('rejecting payload for %s: bad or missing sig' % payload.get('edition_date'))
+    return ok
 
 
 def item_xml(date, idx, it):

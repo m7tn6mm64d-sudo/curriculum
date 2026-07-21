@@ -33,7 +33,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Regenerate feed from pulse artifact
+      - name: Regenerate feed from relay
+        env:
+          PULSE_RELAY_SECRET: ${{ secrets.PULSE_RELAY_SECRET }}
         run: python3 .github/scripts/pull_pulse.py
       - name: Commit if changed
         run: |
