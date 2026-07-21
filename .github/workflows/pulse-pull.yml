@@ -1,0 +1,49 @@
+name: pulse-pull
+
+# Pulls the pulse artifact's embedded state every morning (shortly after the
+# 6 AM Pacific cloud run) and publishes feed.xml + pulse-status.json into this
+# repo, so the curriculum page's news widget is fresh without any push access
+# from the cloud sandbox (whose egress to GitHub is blocked) or from the Mac.
+#
+# Cron times are UTC. 13:2x/13:5x cover PDT mornings; 14:2x/14:5x cover PST,
+# so no edit is needed when DST ends. Each run is ~15s. The push trigger also
+# refreshes the feed after any site rebuild. No recursion: commits made with
+# the default GITHUB_TOKEN never re-trigger workflows (GitHub rule), while
+# Pages still deploys them — do NOT add [skip ci], it would skip Pages too.
+
+on:
+  schedule:
+    - cron: '20 13 * * *'
+    - cron: '50 13 * * *'
+    - cron: '20 14 * * *'
+    - cron: '50 14 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: pulse-pull
+  cancel-in-progress: false
+
+jobs:
+  pull:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Regenerate feed from pulse artifact
+        run: python3 .github/scripts/pull_pulse.py
+      - name: Commit if changed
+        run: |
+          git config user.name "pulse-pull[bot]"
+          git config user.email "actions@users.noreply.github.com"
+          git pull --rebase --autostash origin main
+          git add feed.xml pulse-status.json
+          if git diff --cached --quiet; then
+            echo "feed unchanged — nothing to commit"
+          else
+            git commit -m "pulse feed refresh"
+            git push
+          fi
