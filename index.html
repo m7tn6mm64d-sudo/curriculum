@@ -1382,8 +1382,9 @@ if(MIRROR){
       });
       anchor.innerHTML='';
       fresh.slice(0,3).forEach(f=>{
+        const safeLink=/^https?:\/\//.test(f.link)?f.link:'https://claude.ai/code/artifact/fda1c4f0-0e51-48cd-b2f3-1ea5c9e6fb12';
         const card=document.createElement('div');card.className='pulse-card pulse-latest';
-        card.innerHTML='<div class="pulse-tag">LIVE FROM THE FEED — '+f.date+'</div><h3><a href="'+f.link.replace(/"/g,'%22')+'" target="_blank" rel="noopener">'+f.title.replace(/</g,'&lt;')+'</a></h3>'+f.desc;
+        card.innerHTML='<div class="pulse-tag">LIVE FROM THE FEED — '+f.date+'</div><h3><a href="'+safeLink.replace(/"/g,'%22')+'" target="_blank" rel="noopener">'+f.title.replace(/</g,'&lt;')+'</a></h3>'+f.desc;
         anchor.appendChild(card);
       });
       const d=new Date(),hh=String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');
@@ -1391,7 +1392,10 @@ if(MIRROR){
       const st=document.createElement('p');st.className='pulse-stamp';
       let line;
       const s=got.status;
-      if(s&&s.edition_date){
+      const ca=(s&&s.checked_at)?Date.parse(s.checked_at):NaN;
+      if(!isNaN(ca)&&(Date.now()-ca)>30*3600*1000){
+        line='feed poller last ran '+s.checked_at.slice(0,16).replace('T',' ')+' UTC — the relay rail itself looks stale, not just quiet';
+      }else if(s&&s.edition_date){
         if(s.edition_date===today){
           line='pulse ran today ('+s.edition_date+'): '+(s.quiet?'quiet day — nothing above the bar':s.items_today+' item(s)')+' · checked '+hh;
         }else{
@@ -1402,7 +1406,14 @@ if(MIRROR){
       }
       st.textContent=line;
       anchor.appendChild(st);
-    }catch(e){}
+    }catch(e){
+      // never leave a stale "checked HH:MM" implying this attempt worked
+      const d=new Date(),hh=String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');
+      const msg='feed unreachable at '+hh+' — showing last loaded state';
+      const old=anchor.querySelector('.pulse-stamp');
+      if(old)old.textContent=msg;
+      else{const st=document.createElement('p');st.className='pulse-stamp';st.textContent=msg;anchor.appendChild(st);}
+    }
     hydrating=false;
   }
   hydrate();

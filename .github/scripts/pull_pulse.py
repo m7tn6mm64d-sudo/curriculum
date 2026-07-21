@@ -45,6 +45,24 @@ def _xesc(t):
     return t.replace('&', '&amp;').replace('<', '&lt;').replace('>', '&gt;').replace('"', '&quot;')
 
 
+def _txt(v, limit=1200):
+    """Coerce a payload field to safe text: None -> '', lone surrogates replaced,
+    XML-1.0-illegal control chars stripped, trimmed, length-capped."""
+    s = '' if v is None else str(v)
+    s = s.encode('utf-8', 'replace').decode('utf-8')
+    s = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', '', s)
+    return s.strip()[:limit]
+
+
+def write_atomic(path, data):
+    tmp = path + '.tmp'
+    with open(tmp, 'w') as f:
+        f.write(data)
+        f.flush()
+        os.fsync(f.fileno())
+    os.replace(tmp, path)
+
+
 def _rfc822(datestr):
     d = datetime.datetime.strptime(datestr, '%Y-%m-%d')
     return d.strftime('%a, %d %b %Y 13:15:00 GMT')
@@ -65,18 +83,40 @@ def poll_relay():
     with urllib.request.urlopen(req, timeout=30) as r:
         lines = r.read().decode('utf-8', 'replace').strip().split('\n')
     best, best_t = None, -1
+    attach_url, attach_t = None, -1
     for ln in lines:
         if not ln.strip():
             continue
         try:
             env = json.loads(ln)
-            payload = json.loads(env.get('message', ''))
         except Exception:
             continue
-        if valid(payload):
+        try:
+            payload = json.loads(env.get('message', ''))
+        except Exception:
+            payload = None
+        if payload is not None and valid(payload):
             t = env.get('time', 0)
             if t > best_t:
                 best, best_t = payload, t
+        elif isinstance(env.get('attachment'), dict) and env['attachment'].get('url'):
+            # ntfy silently converts >4KB bodies into attachments; recover them
+            t = env.get('time', 0)
+            if t > attach_t:
+                attach_url, attach_t = env['attachment']['url'], t
+    if best is not None and best_t >= attach_t:
+        return best
+    if attach_url:
+        req = urllib.request.Request(attach_url, headers={'User-Agent': 'pulse-pull-action'})
+        with urllib.request.urlopen(req, timeout=30) as r:
+            body = r.read(65536).decode('utf-8', 'replace')
+        try:
+            payload = json.loads(body)
+        except Exception as e:
+            raise SystemExit('relay attachment present but unparseable: %s' % e)
+        if valid(payload):
+            return payload
+        raise SystemExit('relay attachment present but payload invalid (kind/date/sig)')
     return best
 
 
@@ -100,14 +140,16 @@ def sig_ok(payload):
 
 
 def item_xml(date, idx, it):
-    head = str(it.get('head', '')).strip() or 'Pulse item'
-    link = str(it.get('link', '')).strip() or ARTIFACT
-    tag = str(it.get('tag', '')).strip().upper()
+    head = _txt(it.get('head'), 300) or 'Pulse item'
+    link = _txt(it.get('link'), 1000)
+    if not re.match(r'^https?://', link):
+        link = ARTIFACT  # never emit relative/None/javascript: links
+    tag = _txt(it.get('tag'), 10).upper()
     tag = tag if tag in ('ACT', 'WATCH') else ''
-    module = str(it.get('module', '')).strip()[:1].upper()
+    module = _txt(it.get('module'), 4)[:1].upper()
     mod = (' · Module ' + module) if module in 'ABCDEFGHI' and module else ''
-    desc = '<p>%s</p>' % _xesc(str(it.get('summary', '')).strip())
-    why = str(it.get('why', '')).strip()
+    desc = '<p>%s</p>' % _xesc(_txt(it.get('summary')))
+    why = _txt(it.get('why'))
     if why:
         desc += '<p><b>Why it matters:</b> %s</p>' % _xesc(why)
     if tag:
@@ -124,7 +166,7 @@ def existing_items():
     txt = open(FEED_PATH).read()
     out = []
     for block in re.findall(r'<item>.*?</item>', txt, re.S):
-        gm = re.search(r'pulse-(\d{4}-\d{2}-\d{2})-\d+', block)
+        gm = re.search(r'<guid[^>]*>pulse-(\d{4}-\d{2}-\d{2})-\d+</guid>', block)
         if gm:
             out.append((gm.group(1), block))
     return out
@@ -142,11 +184,15 @@ if os.path.exists(STATUS_PATH):
 now = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 
 if payload is None:
-    # Poll worked but no fresh relay message: stamp the check, keep the rest.
+    # Poll worked but no fresh relay message. Stamp the check at most once per
+    # UTC day so the Mac's daily site push isn't racing four bot commits.
+    if str(old_status.get('checked_at', ''))[:10] == now[:10]:
+        print('no relay payload in window · heartbeat already stamped today — no write')
+        sys.exit(0)
     status = dict(old_status)
     status.update({'checked_at': now, 'source': 'relay-poll-empty'})
     status.setdefault('edition_date', '')
-    open(STATUS_PATH, 'w').write(json.dumps(status) + '\n')
+    write_atomic(STATUS_PATH, json.dumps(status) + '\n')
     print('no relay payload in window · status stamped %s (edition still %s)'
           % (now, status.get('edition_date') or 'unknown'))
     sys.exit(0)
@@ -158,7 +204,7 @@ merged = new_blocks + [b for d, b in existing_items() if d != date]
 
 
 def _order(block):  # date descending, item index ascending within a day
-    gm = re.search(r'pulse-(\d{4}-\d{2}-\d{2})-(\d+)', block)
+    gm = re.search(r'<guid[^>]*>pulse-(\d{4}-\d{2}-\d{2})-(\d+)</guid>', block)
     return (gm.group(1), -int(gm.group(2)))
 
 
@@ -179,7 +225,7 @@ status = {
     'source': 'relay',
 }
 
-open(FEED_PATH, 'w').write(feed)
-open(STATUS_PATH, 'w').write(json.dumps(status) + '\n')
+write_atomic(FEED_PATH, feed)
+write_atomic(STATUS_PATH, json.dumps(status) + '\n')
 print('feed.xml: %d bytes · %d items (%d new for %s, quiet=%s)'
       % (len(feed), len(merged), len(new_blocks), date, status['quiet']))

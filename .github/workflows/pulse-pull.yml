@@ -17,6 +17,10 @@ on:
     - cron: '50 13 * * *'
     - cron: '20 14 * * *'
     - cron: '50 14 * * *'
+    # late sweeps: catch payloads from rescue runs; with since=13h and ntfy's
+    # ~12h retention these two cover anything posted 05:20-23:49 UTC
+    - cron: '20 17 * * *'
+    - cron: '50 23 * * *'
   workflow_dispatch:
   push:
     branches: [main]
