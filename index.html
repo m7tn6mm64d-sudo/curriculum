@@ -1351,6 +1351,10 @@ if(MIRROR){
   const FEEDG='23cb8e6c4d906df6ce29ba5472be91ed';
   let hydrating=false;
   async function getFeed(){
+    // two sources, freshest edition wins: same-origin files (written by the
+    // pulse-pull Action) and the feed gist (written directly by the cloud run
+    // at ~6:08 — immune to GitHub's laggy cron scheduler)
+    let so=null,gi=null;
     try{
       const bust='?t='+Date.now();
       const fr=await fetch('./feed.xml'+bust,{cache:'no-store'});
@@ -1358,19 +1362,76 @@ if(MIRROR){
         const xml=await fr.text();
         let st=null;
         try{const sr=await fetch('./pulse-status.json'+bust,{cache:'no-store'});if(sr.ok)st=await sr.json();}catch(e){}
-        return {xml:xml,status:st};
+        so={xml:xml,status:st};
       }
     }catch(e){}
-    const r=await fetch('https://api.github.com/gists/'+FEEDG,{headers:{'Accept':'application/vnd.github+json'},cache:'no-store'});
-    if(!r.ok)throw 0;
-    const j=await r.json();const xml=j.files&&j.files['pulse.xml']&&j.files['pulse.xml'].content;
-    if(!xml)throw 0;
-    return {xml:xml,status:null};
+    try{
+      const r=await fetch('https://api.github.com/gists/'+FEEDG,{headers:{'Accept':'application/vnd.github+json'},cache:'no-store'});
+      if(r.ok){
+        const j=await r.json();
+        const xml=j.files&&j.files['pulse.xml']&&j.files['pulse.xml'].content;
+        let st=null;
+        const sf=j.files&&j.files['pulse-status.json'];
+        if(sf&&sf.content){try{st=JSON.parse(sf.content)}catch(e){}}
+        if(xml)gi={xml:xml,status:st};
+      }
+    }catch(e){}
+    // third source: the ntfy relay topic itself, read live from the browser —
+    // the only channel the cloud run can write besides claude.ai, so this is
+    // what makes the morning Mac-free. Unverified transport (no sig check
+    // possible client-side), so it only wins when STRICTLY fresher and its
+    // items are rendered as plain text, never markup.
+    let nt=null;
+    try{
+      const r=await fetch('https://ntfy.sh/pulse-feed-jkl-x8e2rv7q/json?poll=1&since=18h',{cache:'no-store'});
+      if(r.ok){
+        const lines=(await r.text()).trim().split('\n');
+        let best=null,bt=-1;
+        lines.forEach(ln=>{
+          if(!ln.trim())return;
+          let env=null,p=null;
+          try{env=JSON.parse(ln);p=JSON.parse(env.message||'');}catch(e){return;}
+          if(p&&p.kind==='pulse-relay-v1'&&/^\d{4}-\d{2}-\d{2}$/.test(String(p.edition_date||''))&&(env.time||0)>bt){best=p;bt=env.time;}
+        });
+        if(best)nt={payload:best};
+      }
+    }catch(e){}
+    const sd=(so&&so.status&&so.status.edition_date)||'';
+    const gd=(gi&&gi.status&&gi.status.edition_date)||'';
+    const nd=(nt&&nt.payload.edition_date)||'';
+    if(nd&&nd>sd&&nd>gd)return {live:nt.payload};
+    if(!so&&!gi){if(nt)return {live:nt.payload};throw 0;}
+    if(so&&gi)return gd>sd?gi:so;
+    return so||gi;
   }
   async function hydrate(){
     if(hydrating)return;hydrating=true;
     try{
       const got=await getFeed();
+      if(got.live){
+        // rendered from the raw relay: text nodes only, no markup from payload
+        const p=got.live;
+        anchor.innerHTML='';
+        (p.items||[]).slice(0,3).forEach(it=>{
+          const card=document.createElement('div');card.className='pulse-card pulse-latest';
+          const tag=document.createElement('div');tag.className='pulse-tag';tag.textContent='LIVE RELAY — '+p.edition_date;
+          const h=document.createElement('h3');const a=document.createElement('a');
+          const lk=String(it.link||'');
+          a.href=/^https?:\/\//.test(lk)?lk:'https://claude.ai/code/artifact/fda1c4f0-0e51-48cd-b2f3-1ea5c9e6fb12';
+          a.target='_blank';a.rel='noopener';a.textContent=String(it.head||'Pulse item');
+          h.appendChild(a);
+          const sum=document.createElement('p');sum.textContent=String(it.summary||'');
+          card.appendChild(tag);card.appendChild(h);card.appendChild(sum);
+          if(it.why){const w=document.createElement('p');const b=document.createElement('b');b.textContent='Why it matters: ';w.appendChild(b);w.appendChild(document.createTextNode(String(it.why)));card.appendChild(w);}
+          anchor.appendChild(card);
+        });
+        const d=new Date(),hh=String(d.getHours()).padStart(2,'0')+':'+String(d.getMinutes()).padStart(2,'0');
+        const today=d.toLocaleDateString('en-CA');
+        const st=document.createElement('p');st.className='pulse-stamp';
+        st.textContent=(p.edition_date===today?('pulse ran today ('+p.edition_date+'): '+(p.quiet?'quiet day — nothing above the bar':((p.items||[]).length+' item(s)'))):('latest pulse edition: '+p.edition_date))+' · live relay · checked '+hh;
+        anchor.appendChild(st);
+        hydrating=false;return;
+      }
       const doc=new DOMParser().parseFromString(got.xml,'text/xml');
       const built=anchor.dataset.built||'';
       const fresh=[];
