@@ -3,11 +3,11 @@
  "last_run": {
   "date": "2026-10-21",
   "quiet": false,
-  "new": 1,
+  "new": 7,
   "updates": 0,
-  "items": 1
+  "items": 4
  },
- "checked_at": "2026-10-22T04:16:24Z",
+ "checked_at": "2026-10-22T04:20:15Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
