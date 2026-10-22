@@ -216,11 +216,23 @@ def _order(block):  # date descending, item index ascending within a day
 merged.sort(key=_order, reverse=True)
 merged = merged[:MAX_ITEMS]
 
+# keep the job-watch items (guid jobs-...) that pull_jobs.py writes into the same feed,
+# interleaved by date; pulse items sort ahead of job items on the same day
+_jobs = re.findall(r'<item>(?:(?!</item>).)*?<guid[^>]*>jobs-\d{4}-\d{2}-\d{2}-\d+</guid>.*?</item>', open(FEED_PATH).read(), re.S) if os.path.exists(FEED_PATH) else []
+
+
+def _order_all(block):
+    gm = re.search(r'<guid[^>]*>(pulse|jobs)-(\d{4}-\d{2}-\d{2})-(\d+)</guid>', block)
+    return (gm.group(2), 1 if gm.group(1) == 'pulse' else 0, -int(gm.group(3))) if gm else ('0000-00-00', 0, 0)
+
+
+merged = sorted(merged + _jobs, key=_order_all, reverse=True)
+
 feed = ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>'
         '<title>The Pulse — Health-System AI Daily</title>'
         '<link>' + SITE + '</link>'
         '<atom:link href="' + SITE + 'feed.xml" rel="self" type="application/rss+xml"/>'
-        '<description>0–3 items a day a health-system clinical-AI leader would be embarrassed to miss. De-hyped by contract; quiet days produce no items.</description>'
+        '<description>0–3 items a day a health-system clinical-AI leader would be embarrassed to miss. De-hyped by contract; quiet days produce no items. Also carries the daily job watch (items titled New job / Job closed / Job reposted).</description>'
         '<language>en-us</language><ttl>180</ttl>' + ''.join(merged) + '</channel></rss>\n')
 
 # the status line tracks the newest edition; a backfill of an older day never moves it backward

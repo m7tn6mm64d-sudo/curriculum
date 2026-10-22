@@ -1,6 +1,6 @@
 name: pulse-pull
 
-# Pulls the pulse artifact's embedded state every morning (shortly after the
+# Pulls the pulse (and, since 2026-10-21, the daily job watch) every morning (shortly after the
 # 6 AM Pacific cloud run) and publishes feed.xml + pulse-status.json into this
 # repo, so the curriculum page's news widget is fresh without any push access
 # from the cloud sandbox (whose egress to GitHub is blocked) or from the Mac.
@@ -41,12 +41,19 @@ jobs:
         env:
           PULSE_RELAY_SECRET: ${{ secrets.PULSE_RELAY_SECRET }}
         run: python3 .github/scripts/pull_pulse.py
+      - name: Merge job watch from relay
+        # the daily job-watch cloud run relays through its own ntfy topic; a
+        # failure here must never block the pulse commit below
+        continue-on-error: true
+        env:
+          PULSE_RELAY_SECRET: ${{ secrets.PULSE_RELAY_SECRET }}
+        run: python3 .github/scripts/pull_jobs.py
       - name: Commit if changed
         run: |
           git config user.name "pulse-pull[bot]"
           git config user.email "actions@users.noreply.github.com"
           git pull --rebase --autostash origin main
-          git add feed.xml pulse-status.json
+          git add feed.xml pulse-status.json jobs.json
           if git diff --cached --quiet; then
             echo "feed unchanged — nothing to commit"
           else

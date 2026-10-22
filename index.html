@@ -81,6 +81,7 @@ th{font-size:10.5px;text-transform:uppercase;letter-spacing:.08em;color:var(--mu
 .pulse-day[open] summary{border-bottom:1px solid var(--line)}
 .pulse-day>*:not(summary){margin-left:14px;margin-right:14px}
 .pulse-stamp{font-family:var(--mono);font-size:11px;color:var(--mut);margin-top:18px}
+.job-card h4{margin:4px 0 6px}.job-meta{font-family:var(--mono);font-size:11.5px;color:var(--mut);margin:0 0 8px}.job-closed{opacity:.62}.jobs-sub{font-size:13px;color:var(--mut);margin:-4px 0 12px}
 footer{border-top:1px solid var(--line);padding-top:20px;font-family:var(--sans);font-size:12.5px;color:var(--mut)}
 .syncbar{position:sticky;top:0;z-index:20;background:var(--wash);border:1px solid var(--acc2);border-radius:8px;padding:10px 14px;margin:8px 0;font-family:var(--sans);font-size:13px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
 .tokinp{font-family:var(--mono);font-size:12px;border:1px solid var(--line);border-radius:5px;padding:5px 8px;background:var(--card);color:var(--ink);min-width:210px}
@@ -103,7 +104,7 @@ footer{border-top:1px solid var(--line);padding-top:20px;font-family:var(--sans)
 <div class="allprog" id="allprog"></div>
 <div class="legend2"><span class="ustat"></span>not started<span class="ustat partial"></span>in progress<span class="ustat complete"></span>fully complete<span style="margin-left:6px">· each unit&rsquo;s icon fills as you check its resources · <strong>RAPID</strong> boxes are the 6-month core, <strong>FULL</strong> boxes are depth</span></div>
 </header>
-<nav id="nav"><button data-s="overview" class="on">Overview</button><button data-s="pacing">Pacing</button><button data-s="pulse">Pulse — live</button><button data-s="module-a">Module A — LLM foundations</button><button data-s="module-b">Module B — Running AI in production</button><button data-s="module-c">Module C — Knowing whether clinical AI works</button><button data-s="module-d">Module D — Health-AI governance, safety &amp; ethics canon (the operative texts)</button><button data-s="module-e">Module E — Health data, interoperability &amp; analytics</button><button data-s="module-f">Module F — Health-system finance &amp; operations</button><button data-s="module-g">Module G — The discipline you&#x27;re boarding in</button><button data-s="module-h">Module H — Why deployments live or die</button><button data-s="module-i">Module I — The field</button><button data-s="glossary">Glossary</button></nav>
+<nav id="nav"><button data-s="overview" class="on">Overview</button><button data-s="pacing">Pacing</button><button data-s="pulse">Pulse — live</button><button data-s="jobs">Jobs — live</button><button data-s="module-a">Module A — LLM foundations</button><button data-s="module-b">Module B — Running AI in production</button><button data-s="module-c">Module C — Knowing whether clinical AI works</button><button data-s="module-d">Module D — Health-AI governance, safety &amp; ethics canon (the operative texts)</button><button data-s="module-e">Module E — Health data, interoperability &amp; analytics</button><button data-s="module-f">Module F — Health-system finance &amp; operations</button><button data-s="module-g">Module G — The discipline you&#x27;re boarding in</button><button data-s="module-h">Module H — Why deployments live or die</button><button data-s="module-i">Module I — The field</button><button data-s="glossary">Glossary</button></nav>
 <section id="overview" class="on"><h2 id="the-expertise-curriculum-overview">The Expertise Curriculum — overview</h2>
 <h3 id="what-this-is-and-what-it-is-not">What this is, and what it is not</h3>
 <p>This is the answer to one question: <em>if you asked someone who has already achieved mastery in health-system AI leadership how to build a strong expertise foundation in six months — and complete it in twelve — what would they tell you to read, watch, and understand, in what order?</em> It is a mentor's curriculum: primarily passive (read, watch, listen, reflect), organized by knowledge domain, with every resource chosen because independent experts converge on it — not because it filled a slot.</p>
@@ -163,7 +164,7 @@ footer{border-top:1px solid var(--line);padding-top:20px;font-family:var(--sans)
 <p>Natural pause points sit at <strong>end of August</strong> (A done — a clean seam before B), <strong>end of November</strong> (C and G done, D underway), and <strong>mid-January</strong> (the RAPID gate). Life can interrupt at any of these without structural damage; interrupting mid-module costs more re-entry tax.</p>
 <p><strong>Running behind? Here is the spine.</strong> The 10-item spine in overview.md (~50–60h, all passive) is the guaranteed core: Wachter, the Karpathy deep dive, the CHAIO founding document, FURM, RUAIH + CHAI, the Epic sepsis arc, the NAM code, HFMA Module I, the PHTI ambient report, and SMART/FHIR literacy. If a month collapses, do only the spine items that month would have covered and let everything else slide right. The spine complete by mid-January is a pass; the spine incomplete is the only true "behind." Nothing in FULL can ever be behind — it fills the container it's given.</p>
 <h3 id="how-to-actually-consume-this">How to actually consume this</h3>
-<p>Three habits carry the whole year. <strong>Commute audio</strong> — Wachter in July, the Karpathy talks (audio-tolerable on second pass), the podcast episodes in I and D, the prequel in May; if your commute averages 30 minutes, that's ~4h/month you never feel. <strong>One video evening a week</strong> — the Karpathy/3Blue1Brown material in A and the Grand Rounds episodes want a screen and your attention; give them one protected evening, not scraps. <strong>The monthly journal scan</strong> — from September onward, ~30 minutes with the G6/I6 sources on the first weekend of each month; it's the cheapest way this curriculum stays current after you finish it, and it's the habit that makes you the person who mentions the new validation study before the committee has heard of it. Read on the couch, take no notes on first passes, and let the "In practice" reflections do their work at your next meeting rather than in a notebook.</p></section><section id="pulse"><p class="pulse-intro">Module 0, and the only living one: a daily cloud agent surveys regulation, deployments, the vendor map, frontier AI (gated for clinical relevance), and the journals — then distills the month's top three storylines. It flags curriculum-stale items but never edits the modules. Quiet days are legitimate.</p><div class="pulse-card"><div class="pulse-tag">TODAY'S EDITION</div><p>The full edition, this month's top three storylines, the curriculum maintenance queue and the complete archive live on <a href="https://claude.ai/code/artifact/fda1c4f0-0e51-48cd-b2f3-1ea5c9e6fb12" target="_blank" rel="noopener">the Pulse page</a>, republished every morning. The newest items appear below as they land.</p></div><div id="pulse-live"><p class="pulse-stamp">Loading the latest items…</p></div></section><section id="module-a"><div class="modprog"></div><h2 id="module-a-how-language-models-actually-work-mechani">Module A — How language models actually work (mechanistic literacy)</h2>
+<p>Three habits carry the whole year. <strong>Commute audio</strong> — Wachter in July, the Karpathy talks (audio-tolerable on second pass), the podcast episodes in I and D, the prequel in May; if your commute averages 30 minutes, that's ~4h/month you never feel. <strong>One video evening a week</strong> — the Karpathy/3Blue1Brown material in A and the Grand Rounds episodes want a screen and your attention; give them one protected evening, not scraps. <strong>The monthly journal scan</strong> — from September onward, ~30 minutes with the G6/I6 sources on the first weekend of each month; it's the cheapest way this curriculum stays current after you finish it, and it's the habit that makes you the person who mentions the new validation study before the committee has heard of it. Read on the couch, take no notes on first passes, and let the "In practice" reflections do their work at your next meeting rather than in a notebook.</p></section><section id="pulse"><p class="pulse-intro">Module 0, and the only living one: a daily cloud agent surveys regulation, deployments, the vendor map, frontier AI (gated for clinical relevance), and the journals — then distills the month's top three storylines. It flags curriculum-stale items but never edits the modules. Quiet days are legitimate.</p><div class="pulse-card"><div class="pulse-tag">TODAY'S EDITION</div><p>The full edition, this month's top three storylines, the curriculum maintenance queue and the complete archive live on <a href="https://claude.ai/code/artifact/fda1c4f0-0e51-48cd-b2f3-1ea5c9e6fb12" target="_blank" rel="noopener">the Pulse page</a>, republished every morning. The newest items appear below as they land.</p></div><div id="pulse-live"><p class="pulse-stamp">Loading the latest items…</p></div></section><section id="jobs"><p class="pulse-intro">A daily cloud run searches health-system, academic, payer, vendor and federal job boards for physician informatics, clinical-AI, ED leadership and academic EM roles in Orange County, Los Angeles and San Diego, or fully remote in the US. Anything new, closed or reposted lands here and in the RSS feed the same morning. Employer type is shown as public, nonprofit or for-profit.</p><div id="jobs-live"><p class="pulse-stamp">Loading the job list…</p></div></section><section id="module-a"><div class="modprog"></div><h2 id="module-a-how-language-models-actually-work-mechani">Module A — How language models actually work (mechanistic literacy)</h2>
 <h3 id="module-guide">Module guide</h3>
 <p><strong>Goal.</strong> By the end of this module you can explain — in plain English, to a board member or to a vendor's engineer — what a large language model is, how it was trained, why it hallucinates, what its knobs (temperature, context window) actually do, what running it costs and why, and when fine-tuning, retrieval, or prompting is the right lever. Not so you can build one; so you can never be hand-waved about one.</p>
 <p><strong>Why this domain matters for your target.</strong> The evidence trail from the hiring research behind this curriculum is direct: post-deployment monitoring, "model evaluation beyond accuracy," and fine-tuning judgment appear as named screening criteria for senior health-AI seats — Chief Health AI Officer (CHAIO)-tier roles — in recruiter screening lists (<a href="https://www.kore1.com/healthcare-ai-hiring-2026/" target="_blank" rel="noopener">one 2026 example</a>), and the failure mode this module inoculates against — the leader who governs what they cannot describe — is the one every credible expert warns about. The physician-authored guidance says it cleanly: clinicians need <a href="https://physicianaihandbook.com/practical/llm-practice.html" target="_blank" rel="noopener">"understanding sufficient for clinical decision-making, not machine learning expertise"</a>. This module is that understanding, taken to the leadership grade.</p>
@@ -1443,6 +1444,69 @@ if(MIRROR){
       else{const st=document.createElement('p');st.className='pulse-stamp';st.textContent=msg;anchor.appendChild(st);}
     }
     hydrating=false;
+  }
+  hydrate();
+  document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')hydrate();});
+})();
+// --- live job watch (web page only): jobs.json written by the pulse-pull Action from the job-watch relay ---
+(function(){
+  const anchor=document.getElementById('jobs-live');
+  if(!anchor)return;
+  if(typeof MIRROR!=='undefined'&&MIRROR){anchor.innerHTML='<p class="pulse-stamp">The job list loads on the synced web page; this read-only copy cannot fetch it.</p>';return;}
+  const TIERS=[['pursue','Pursue now','Best fits that keep a public or nonprofit employer.'],['stretch','Right work, wrong terms','The work matches; the employer type or experience bar does not.'],['fallback','Fallbacks','Clinical or adjacent roles that could carry informatics later.'],['side','Side work','Contract AI-evaluation work that can run alongside a main job.'],['watch','Watch list','Closed, out of region or non-physician, but likely to recur.']];
+  const TYPE={'public':'Public employer','nonprofit':'Nonprofit employer','for-profit':'For-profit employer','contract':'Contract work','unknown':'Employer type unconfirmed'};
+  const el=(t,c,x)=>{const e=document.createElement(t);if(c)e.className=c;if(x!=null)e.textContent=String(x);return e;};
+  const safe=u=>{u=String(u||'');return (u.indexOf('https://')===0||u.indexOf('http://')===0)?u:'';};
+  function card(j,tag){
+    const c=el('div','pulse-card job-card'+(j.status==='closed'?' job-closed':''));
+    if(tag)c.appendChild(el('div','pulse-tag',tag));
+    const h=el('h4');const u=safe(j.url);
+    if(u){const a=el('a',null,j.title);a.href=u;a.target='_blank';a.rel='noopener';h.appendChild(a);}else{h.textContent=String(j.title||'');}
+    c.appendChild(h);
+    c.appendChild(el('p','job-meta',[j.employer,j.location,j.comp,TYPE[j.employer_type]||''].filter(Boolean).join(' · ')));
+    if(j.fit)c.appendChild(el('p',null,j.fit));
+    if(j.gap)c.appendChild(el('p','job-meta','Gap: '+j.gap));
+    if(j.status!=='open'&&j.note)c.appendChild(el('p','job-meta',j.note));
+    return c;
+  }
+  let busy=false;
+  async function hydrate(){
+    if(busy)return;busy=true;
+    try{
+      const r=await fetch('./jobs.json?t='+Date.now(),{cache:'no-store'});
+      if(!r.ok)throw 0;
+      const d=await r.json();const jobs=d.jobs||[];
+      anchor.innerHTML='';
+      const now=new Date();const today=now.toLocaleDateString('en-CA');
+      const cutoff=new Date(now.getTime()-7*864e5).toLocaleDateString('en-CA');
+      const fresh=jobs.filter(j=>!j.seeded&&j.first_seen>=cutoff&&j.status!=='closed').sort((a,b)=>a.first_seen<b.first_seen?1:-1);
+      const moved=jobs.filter(j=>j.status_date&&j.status_date>=cutoff&&j.status!=='open').sort((a,b)=>a.status_date<b.status_date?1:-1);
+      const h=el('h3',null,'New in the last 7 days');anchor.appendChild(h);
+      if(fresh.length){fresh.forEach(j=>anchor.appendChild(card(j,'NEW · '+j.first_seen+' · '+String(j.tier||'').toUpperCase())));}
+      else{anchor.appendChild(el('p','jobs-sub','No new postings this week.'));}
+      if(moved.length){anchor.appendChild(el('h3',null,'Closed or reposted this week'));moved.forEach(j=>anchor.appendChild(card(j,String(j.status).toUpperCase()+' · '+j.status_date)));}
+      TIERS.forEach(t=>{
+        const list=jobs.filter(j=>j.tier===t[0]&&j.status!=='closed');
+        if(!list.length)return;
+        const det=el('details','pulse-day');if(t[0]==='pursue'||t[0]==='stretch')det.open=true;
+        const sm=el('summary',null,t[1]+' ('+list.length+')');det.appendChild(sm);
+        det.appendChild(el('p','jobs-sub',t[2]));
+        list.forEach(j=>det.appendChild(card(j,'')));
+        anchor.appendChild(det);
+      });
+      const closed=jobs.filter(j=>j.status==='closed');
+      if(closed.length){const det=el('details','pulse-day');det.appendChild(el('summary',null,'Closed or taken down ('+closed.length+')'));closed.forEach(j=>det.appendChild(card(j,'')));anchor.appendChild(det);}
+      const lr=d.last_run||{};let line;
+      const ca=Date.parse(d.checked_at||'');
+      if(!isNaN(ca)&&(Date.now()-ca)>30*3600*1000){line='job poller last ran '+String(d.checked_at).slice(0,16).replace('T',' ')+' UTC — the relay looks stale';}
+      else if(lr.date===today){line='job watch ran today: '+(lr.items?lr.items+' change(s) posted':'nothing new');}
+      else if(lr.date){line='latest job-watch run: '+lr.date+' — today’s run hasn’t landed yet';}
+      else{line='job list loaded';}
+      anchor.appendChild(el('p','pulse-stamp',line+' · '+jobs.filter(j=>j.status!=='closed').length+' open roles tracked'));
+    }catch(e){
+      anchor.innerHTML='<p class="pulse-stamp">job list unreachable right now</p>';
+    }
+    busy=false;
   }
   hydrate();
   document.addEventListener('visibilitychange',()=>{if(document.visibilityState==='visible')hydrate();});
