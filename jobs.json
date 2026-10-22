@@ -2,13 +2,12 @@
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
   "date": "2026-10-21",
-  "quiet": true,
-  "new": 0,
+  "quiet": false,
+  "new": 1,
   "updates": 0,
-  "items": 0,
-  "seed": true
+  "items": 1
  },
- "checked_at": "2026-10-22T04:00:00Z",
+ "checked_at": "2026-10-22T04:16:24Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -819,6 +818,74 @@
    "last_seen": "2026-10-21",
    "note": "Live. Checked today.",
    "seeded": true
+  },
+  {
+   "id": "avo-avomd-medical-director-ai-safety-clinical-solutions",
+   "title": "Medical Director, AI Safety & Clinical Solutions",
+   "employer": "Avo (AvoMD)",
+   "location": "Remote (US) or New York area",
+   "employer_type": "for-profit",
+   "tier": "stretch",
+   "comp": "$175K–$200K OTE plus equity (per listings)",
+   "url": "https://job-boards.greenhouse.io/avomdincdbaavo/jobs/4245557009",
+   "posted": "2026-10-13",
+   "fit": "About 85% clinical-AI safety: setting safety standards, hallucination and omission evals, harm-severity rubrics and go/no-go release sign-off, which matches his LLM validation and RUAIH work. Link not opened; aggregators show it reposted Oct 13–19, 2026.",
+   "gap": "for-profit ends PSLF; likely immediate fill, some sales support",
+   "status": "open",
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-10-21",
+   "note": ""
+  },
+  {
+   "id": "mercor-for-a-healthcare-ai-client-emergency-medicine-physician-md-ai-documentati",
+   "title": "Emergency Medicine Physician (MD), AI documentation review",
+   "employer": "Mercor (for a healthcare AI client)",
+   "location": "Remote (US)",
+   "employer_type": "contract",
+   "tier": "side",
+   "comp": "$150–$170/hr (per listings)",
+   "url": "https://work.mercor.com/jobs/list_AAABoPTEz86y9nW5ZppKFo4B/emergency-medicine-physician-md",
+   "posted": "2026-10-06",
+   "fit": "Part-time hourly work reviewing ED charts and checking AI-generated ED arrival summaries for omissions and hallucinations; this is his EM and eval skill set exactly. Link not opened; date is from an aggregator capture.",
+   "gap": "",
+   "status": "open",
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-10-21",
+   "note": ""
+  },
+  {
+   "id": "gramian-consulting-group-for-an-ai-client-general-physician-ai-evaluation",
+   "title": "General Physician, AI Evaluation",
+   "employer": "Gramian Consulting Group (for an AI client)",
+   "location": "Remote (US)",
+   "employer_type": "contract",
+   "tier": "side",
+   "comp": "",
+   "url": "https://remowork.life/jobs/6accd4b22e6f478028aff92d/general-physician-ai-evaluation",
+   "posted": "2026-10-12",
+   "fit": "Contract review of AI-generated diagnoses, plans and summaries for accuracy and safety by US-licensed physicians. Link not opened.",
+   "gap": "pay and hours not listed",
+   "status": "open",
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-10-21",
+   "note": ""
+  },
+  {
+   "id": "venice-family-clinic-associate-medical-director-clinical-informatics",
+   "title": "Associate Medical Director, Clinical Informatics",
+   "employer": "Venice Family Clinic",
+   "location": "Los Angeles County (listing shows Gardena, CA)",
+   "employer_type": "nonprofit",
+   "tier": "watch",
+   "comp": "$250,000-$348,100 base (per listings)",
+   "url": "https://www.marithealth.com/jobs/01d8b521-d60c-47a2-b741-a4355a3ac2c0",
+   "posted": "",
+   "fit": "Nonprofit FQHC physician informatics lead for the EHR (Epic) with 40% admin time, which keeps PSLF and uses his informatics and Epic build work. Link not opened; an aggregator listed it about 22 days ago.",
+   "gap": "60%+ clinical at a community clinic, likely needs primary-care boards",
+   "status": "open",
+   "first_seen": "2026-10-21",
+   "last_seen": "2026-10-21",
+   "note": ""
   }
  ]
 }
