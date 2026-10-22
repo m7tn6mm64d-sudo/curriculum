@@ -5,9 +5,12 @@ Why a relay: the cloud pulse run cannot push to GitHub (sandbox egress blocks
 api.github.com — verified 2026-07-21) and GitHub Actions cannot read the pulse
 artifact (claude.ai serves content only to authenticated sessions). ntfy.sh is
 reachable from BOTH sides: the cloud run POSTs a compact JSON payload to a
-topic right after publishing (spec step 6.6), and this script — run on GitHub
-Actions shortly after — polls that topic and writes durable same-origin files
-the curriculum page's news widget reads:
+topic right after publishing (spec step 6.5) — preceded by one payload per
+recent item-day it finds missing from the live feed.xml, so a relay that was
+dropped (ntfy 429s happen) heals the next morning — and this script, run on
+GitHub Actions shortly after, polls that topic, merges every payload in the
+window, and writes durable same-origin files the curriculum page's news
+widget reads:
 
   feed.xml           RSS; item format identical to pulse/build-pulse.py's
                      generator (guid pulse-YYYY-MM-DD-idx, pubDate 13:15 GMT).
@@ -35,6 +38,7 @@ import json, re, urllib.request, datetime, os, sys, hashlib
 TOPIC = 'pulse-feed-jkl-x8e2rv7q'
 POLL = 'https://ntfy.sh/%s/json?poll=1&since=13h' % TOPIC
 ARTIFACT = 'https://claude.ai/code/artifact/fda1c4f0-0e51-48cd-b2f3-1ea5c9e6fb12'
+SITE = 'https://m7tn6mm64d-sudo.github.io/curriculum/'
 REPO_ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', '..'))
 FEED_PATH = os.path.join(REPO_ROOT, 'feed.xml')
 STATUS_PATH = os.path.join(REPO_ROOT, 'pulse-status.json')
@@ -68,22 +72,26 @@ def _rfc822(datestr):
     return d.strftime('%a, %d %b %Y 13:15:00 GMT')
 
 
-def poll_relay():
-    """Return the newest pulse-relay-v1 payload from the topic, or None.
+def poll_relays():
+    """Return every valid pulse-relay-v1 payload in the window, oldest first.
 
-    Test hook: if PULSE_RELAY_FILE is set, read the payload from that file
-    instead of polling — lets the item-merge path be exercised without
-    posting fabricated items to the live topic.
+    All of them, not just the newest: the cloud run re-sends earlier days that
+    are missing from feed.xml (backfill) just before today's relay, and each
+    must land. Merging is idempotent, so re-processing a payload on a later
+    poll is harmless.
+
+    Test hook: if PULSE_RELAY_FILE is set, read the payload (or a JSON list of
+    payloads) from that file instead of polling — lets the item-merge path be
+    exercised without posting fabricated items to the live topic.
     """
     stub = os.environ.get('PULSE_RELAY_FILE')
     if stub:
-        payload = json.load(open(stub))
-        return payload if valid(payload) else None
+        loaded = json.load(open(stub))
+        return [p for p in (loaded if isinstance(loaded, list) else [loaded]) if valid(p)]
     req = urllib.request.Request(POLL, headers={'User-Agent': 'pulse-pull-action'})
     with urllib.request.urlopen(req, timeout=30) as r:
         lines = r.read().decode('utf-8', 'replace').strip().split('\n')
-    best, best_t = None, -1
-    attach_url, attach_t = None, -1
+    found = []
     for ln in lines:
         if not ln.strip():
             continue
@@ -91,33 +99,28 @@ def poll_relay():
             env = json.loads(ln)
         except Exception:
             continue
+        t = env.get('time', 0)
         try:
             payload = json.loads(env.get('message', ''))
         except Exception:
             payload = None
         if payload is not None and valid(payload):
-            t = env.get('time', 0)
-            if t > best_t:
-                best, best_t = payload, t
+            found.append((t, payload))
         elif isinstance(env.get('attachment'), dict) and env['attachment'].get('url'):
             # ntfy silently converts >4KB bodies into attachments; recover them
-            t = env.get('time', 0)
-            if t > attach_t:
-                attach_url, attach_t = env['attachment']['url'], t
-    if best is not None and best_t >= attach_t:
-        return best
-    if attach_url:
-        req = urllib.request.Request(attach_url, headers={'User-Agent': 'pulse-pull-action'})
-        with urllib.request.urlopen(req, timeout=30) as r:
-            body = r.read(65536).decode('utf-8', 'replace')
-        try:
-            payload = json.loads(body)
-        except Exception as e:
-            raise SystemExit('relay attachment present but unparseable: %s' % e)
-        if valid(payload):
-            return payload
-        raise SystemExit('relay attachment present but payload invalid (kind/date/sig)')
-    return best
+            try:
+                areq = urllib.request.Request(env['attachment']['url'], headers={'User-Agent': 'pulse-pull-action'})
+                with urllib.request.urlopen(areq, timeout=30) as r:
+                    payload = json.loads(r.read(65536).decode('utf-8', 'replace'))
+            except Exception as e:
+                print('skipping unreadable relay attachment (%s)' % e)
+                continue
+            if valid(payload):
+                found.append((t, payload))
+            else:
+                print('skipping relay attachment with invalid payload (kind/date/sig)')
+    found.sort(key=lambda x: x[0])
+    return [p for _, p in found]
 
 
 def valid(payload):
@@ -172,7 +175,7 @@ def existing_items():
     return out
 
 
-payload = poll_relay()  # raises on transport failure -> Action turns red, files untouched
+payloads = poll_relays()  # raises on transport failure -> Action turns red, files untouched
 
 old_status = {}
 if os.path.exists(STATUS_PATH):
@@ -183,9 +186,9 @@ if os.path.exists(STATUS_PATH):
 
 now = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 
-if payload is None:
+if not payloads:
     # Poll worked but no fresh relay message. Stamp the check at most once per
-    # UTC day so the Mac's daily site push isn't racing four bot commits.
+    # UTC day so the poller doesn't commit an identical heartbeat every run.
     if str(old_status.get('checked_at', ''))[:10] == now[:10]:
         print('no relay payload in window · heartbeat already stamped today — no write')
         sys.exit(0)
@@ -197,10 +200,12 @@ if payload is None:
           % (now, status.get('edition_date') or 'unknown'))
     sys.exit(0)
 
-date = payload['edition_date']
-new_blocks = [item_xml(date, i, it) for i, it in enumerate(payload.get('items') or [])]
-
-merged = new_blocks + [b for d, b in existing_items() if d != date]
+items = existing_items()
+for payload in payloads:  # oldest first, so a later relay for the same date wins
+    date = payload['edition_date']
+    items = [(date, item_xml(date, i, it)) for i, it in enumerate(payload.get('items') or [])] \
+        + [(d, b) for d, b in items if d != date]
+merged = [b for d, b in items]
 
 
 def _order(block):  # date descending, item index ascending within a day
@@ -211,21 +216,30 @@ def _order(block):  # date descending, item index ascending within a day
 merged.sort(key=_order, reverse=True)
 merged = merged[:MAX_ITEMS]
 
-feed = ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0"><channel>'
+feed = ('<?xml version="1.0" encoding="UTF-8"?>\n<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>'
         '<title>The Pulse — Health-System AI Daily</title>'
-        '<link>' + ARTIFACT + '</link>'
+        '<link>' + SITE + '</link>'
+        '<atom:link href="' + SITE + 'feed.xml" rel="self" type="application/rss+xml"/>'
         '<description>0–3 items a day a health-system clinical-AI leader would be embarrassed to miss. De-hyped by contract; quiet days produce no items.</description>'
         '<language>en-us</language><ttl>180</ttl>' + ''.join(merged) + '</channel></rss>\n')
 
-status = {
-    'edition_date': date,
-    'quiet': bool(payload.get('quiet')),
-    'items_today': len(payload.get('items') or []),
-    'checked_at': now,
-    'source': 'relay',
-}
+# the status line tracks the newest edition; a backfill of an older day never moves it backward
+newest = max(payloads, key=lambda p: p['edition_date'])  # max() keeps the first of equal dates
+newest = [p for p in payloads if p['edition_date'] == newest['edition_date']][-1]
+if newest['edition_date'] >= str(old_status.get('edition_date', '')):
+    status = {
+        'edition_date': newest['edition_date'],
+        'quiet': bool(newest.get('quiet')),
+        'items_today': len(newest.get('items') or []),
+        'checked_at': now,
+        'source': 'relay',
+    }
+else:
+    status = dict(old_status)
+    status.update({'checked_at': now, 'source': 'relay-backfill'})
 
 write_atomic(FEED_PATH, feed)
 write_atomic(STATUS_PATH, json.dumps(status) + '\n')
-print('feed.xml: %d bytes · %d items (%d new for %s, quiet=%s)'
-      % (len(feed), len(merged), len(new_blocks), date, status['quiet']))
+print('feed.xml: %d bytes · %d items · merged %d payload(s) for %s · status edition %s (quiet=%s)'
+      % (len(feed), len(merged), len(payloads), ', '.join(p['edition_date'] for p in payloads),
+         status.get('edition_date'), status.get('quiet')))
