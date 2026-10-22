@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-10-21",
+  "date": "2026-10-22",
   "quiet": false,
-  "new": 7,
+  "new": 1,
   "updates": 0,
-  "items": 4
+  "items": 1
  },
- "checked_at": "2026-10-22T04:20:15Z",
+ "checked_at": "2026-10-22T17:59:12Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -885,6 +885,23 @@
    "status": "open",
    "first_seen": "2026-10-21",
    "last_seen": "2026-10-21",
+   "note": ""
+  },
+  {
+   "id": "cvs-health-aetna-senior-medical-director-digital-innovation",
+   "title": "Senior Medical Director, Digital Innovation",
+   "employer": "CVS Health / Aetna",
+   "location": "Remote, but listings say northeastern US with about monthly travel to Hartford, NYC or Wellesley",
+   "employer_type": "for-profit",
+   "tier": "watch",
+   "comp": "$184,112-$396,550 (per aggregator listing)",
+   "url": "https://jobs.ctbar.org/job/senior-medical-director-digital-innovation/85150591/",
+   "posted": "about 2026-10-12 (aggregator showed 10 days old)",
+   "fit": "Physician lead for Aetna's member-facing clinical AI strategy, sourcing and evaluating AI products, which matches his AI validation and governance work. Link not opened.",
+   "gap": "remote limited to the Northeast; for-profit ends PSLF",
+   "status": "open",
+   "first_seen": "2026-10-22",
+   "last_seen": "2026-10-22",
    "note": ""
   }
  ]
