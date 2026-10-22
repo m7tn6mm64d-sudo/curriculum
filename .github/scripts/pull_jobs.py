@@ -217,10 +217,20 @@ if not payloads:
 jobs = data.get('jobs') or []
 by_id = {j['id']: j for j in jobs}
 by_url = {j['url']: j for j in jobs if j.get('url')}
-feed_blocks = {}
+feed_blocks = {}   # date -> item blocks, accumulated across every payload that shares the date
+emitted = {}       # date -> set of (kind, job id) already turned into an item
+day_stats = {}     # date -> combined last_run counts
 for p in payloads:  # oldest first
     d = p['run_date']
-    blocks = []
+    blocks = feed_blocks.setdefault(d, [])
+    seen = emitted.setdefault(d, set())
+
+    def emit(kind, job):
+        if (kind, job['id']) in seen:
+            return
+        seen.add((kind, job['id']))
+        blocks.append(job_item_xml(d, len(blocks), kind, job))
+
     for raw in (p.get('new') or [])[:15]:
         j = clean_job(raw, d)
         if not j:
@@ -229,7 +239,7 @@ for p in payloads:  # oldest first
         if old:  # already known: refresh; announce a repost, or re-emit when re-processing the same day's payload
             was_closed = old.get('status') == 'closed'
             if old.get('first_seen') == d and not was_closed:
-                blocks.append(job_item_xml(d, len(blocks), 'new', old))
+                emit('new', old)
                 continue
             for k in ('location', 'comp', 'url', 'posted', 'fit', 'gap', 'tier', 'employer_type'):
                 if j.get(k):
@@ -239,13 +249,13 @@ for p in payloads:  # oldest first
                 old['status'] = 'reposted'
                 old['status_date'] = d
                 old['note'] = 'Reposted %s' % d
-                blocks.append(job_item_xml(d, len(blocks), 'reposted', old))
+                emit('reposted', old)
             continue
         jobs.append(j)
         by_id[j['id']] = j
         if j['url']:
             by_url[j['url']] = j
-        blocks.append(job_item_xml(d, len(blocks), 'new', j))
+        emit('new', j)
     for u in (p.get('updates') or [])[:30]:
         jid = _txt(u.get('id'), 80)
         st = _txt(u.get('status'), 20).lower()
@@ -260,12 +270,13 @@ for p in payloads:  # oldest first
         j['note'] = note or j.get('note', '')
         j['last_seen'] = d
         if st in ('closed', 'reposted', 'changed') and j.get('status_date') == d:
-            blocks.append(job_item_xml(d, len(blocks), st, j))
-    feed_blocks[d] = blocks
+            emit(st, j)
+    s = day_stats.setdefault(d, {'new': 0, 'updates': 0})
+    s['new'] += len(p.get('new') or [])
+    s['updates'] += len(p.get('updates') or [])
     if d >= str((data.get('last_run') or {}).get('date', '')):
-        data['last_run'] = {'date': d, 'quiet': bool(p.get('quiet')) and not blocks,
-                            'new': len(p.get('new') or []), 'updates': len(p.get('updates') or []),
-                            'items': len(blocks)}
+        data['last_run'] = {'date': d, 'quiet': not blocks,
+                            'new': s['new'], 'updates': s['updates'], 'items': len(blocks)}
 
 data['jobs'] = jobs
 data['checked_at'] = now
