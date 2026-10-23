@@ -13,6 +13,9 @@ name: pulse-pull
 
 on:
   schedule:
+    # the pulse runs at 11:30 UTC (retry 12:15) since 2026-10-23, so pick up early too
+    - cron: '50 11 * * *'
+    - cron: '35 12 * * *'
     - cron: '20 13 * * *'
     - cron: '50 13 * * *'
     - cron: '20 14 * * *'
