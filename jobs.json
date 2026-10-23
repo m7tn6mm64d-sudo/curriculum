@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-10-22",
+  "date": "2026-10-23",
   "quiet": false,
   "new": 1,
-  "updates": 0,
-  "items": 1
+  "updates": 5,
+  "items": 6
  },
- "checked_at": "2026-10-23T02:00:12Z",
+ "checked_at": "2026-10-23T08:16:56Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -39,11 +39,12 @@
    "posted": "",
    "fit": "A completed CI fellowship meets the minimum. Three years of AI work is preferred. Full time, M–F.",
    "gap": "No clinical time. This req will probably fill before July 2027.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Posted Apr 28, 2026. The posting page still takes interest as of Oct 21, but it no longer turns up in KP's own job search and one job-board copy says it's closed. It may be closing.",
-   "seeded": true
+   "last_seen": "2026-10-23",
+   "note": "checked 2026-10-23: employer page says the job post no longer exists (404)",
+   "seeded": true,
+   "status_date": "2026-10-23"
   },
   {
    "id": "coh-10035748",
@@ -75,11 +76,12 @@
    "posted": "",
    "fit": "The exact title and split you want: four days informatics, one day clinical.",
    "gap": "Requires 4+ years of progressive physician leadership. Prefers Oracle Health experience, not Epic.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Posted Jun 3, 2025. Apply still live as of today. Recruiter copies are still running: Prosum lists it as “ACMIO, Digital and Data Innovation” at $300K–$350K, and Jobot calls it contract-to-hire.",
-   "seeded": true
+   "last_seen": "2026-10-23",
+   "note": "checked 2026-10-23: employer page says the job post no longer exists (404)",
+   "seeded": true,
+   "status_date": "2026-10-23"
   },
   {
    "id": "cedars-16529",
@@ -93,11 +95,12 @@
    "posted": "",
    "fit": "Throughput, appropriateness and value work, with CI, CDS and order-set experience preferred. Maps to your boarding and charge-capture QI.",
    "gap": "Asks for 5 years post-training; you'll have 4 in July 2027. Not AI-specific.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Posted Apr 24, 2026. No closing notice. Checked today.",
-   "seeded": true
+   "last_seen": "2026-10-23",
+   "note": "checked 2026-10-23: employer page says the job post no longer exists (404)",
+   "seeded": true,
+   "status_date": "2026-10-23"
   },
   {
    "id": "optum-ai-nmd",
@@ -327,11 +330,12 @@
    "posted": "",
    "fit": "A 0.5 FTE option fits around EM shifts. The patient-status work overlaps your boarding and billing projects.",
    "gap": "Not informatics.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Posted May 26, 2026.",
-   "seeded": true
+   "last_seen": "2026-10-23",
+   "note": "checked 2026-10-23: employer page says the job post no longer exists (404)",
+   "seeded": true,
+   "status_date": "2026-10-23"
   },
   {
    "id": "prov-pa-um",
@@ -831,10 +835,11 @@
    "posted": "2026-10-13",
    "fit": "About 85% clinical-AI safety: setting safety standards, hallucination and omission evals, harm-severity rubrics and go/no-go release sign-off, which matches his LLM validation and RUAIH work. Link not opened; aggregators show it reposted Oct 13–19, 2026.",
    "gap": "for-profit ends PSLF; likely immediate fill, some sales support",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": ""
+   "last_seen": "2026-10-23",
+   "note": "checked 2026-10-23: Greenhouse posting removed (redirects to board with error)",
+   "status_date": "2026-10-23"
   },
   {
    "id": "mercor-for-a-healthcare-ai-client-emergency-medicine-physician-md-ai-documentati",
@@ -902,6 +907,23 @@
    "status": "open",
    "first_seen": "2026-10-22",
    "last_seen": "2026-10-22",
+   "note": ""
+  },
+  {
+   "id": "counsel-health-medical-director",
+   "title": "Medical Director",
+   "employer": "Counsel Health",
+   "location": "Remote (US)",
+   "employer_type": "for-profit",
+   "tier": "stretch",
+   "comp": "",
+   "url": "https://jobs.ashbyhq.com/counsel/53fa4272-b2f6-46d3-94c7-a5d6a485a143",
+   "posted": "2026-10-19",
+   "fit": "Player-coach physician leader at an AI-native virtual medical group, working with product and AI teams on clinical workflows; EM boards are accepted. Immediate fill, not a July 2027 start.",
+   "gap": "wants longitudinal primary-care experience, physician-management experience and 10+ state licenses; ~30% async primary care; ends PSLF",
+   "status": "open",
+   "first_seen": "2026-10-23",
+   "last_seen": "2026-10-23",
    "note": ""
   }
  ]
