@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-10-23",
+  "date": "2026-10-24",
   "quiet": false,
-  "new": 1,
-  "updates": 5,
-  "items": 6
+  "new": 2,
+  "updates": 0,
+  "items": 2
  },
- "checked_at": "2026-10-24T02:01:03Z",
+ "checked_at": "2026-10-24T12:46:40Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -924,6 +924,40 @@
    "status": "open",
    "first_seen": "2026-10-23",
    "last_seen": "2026-10-23",
+   "note": ""
+  },
+  {
+   "id": "doctronic-medical-director",
+   "title": "Medical Director",
+   "employer": "Doctronic",
+   "location": "Remote, US",
+   "employer_type": "for-profit",
+   "tier": "stretch",
+   "comp": "$250K–$300K + equity",
+   "url": "https://jobs.ashbyhq.com/doctronic/97cbd557-e802-48aa-b1ff-0e602b8354e8",
+   "posted": "2026-02-10",
+   "fit": "Owns clinical pathways, quality and safety-event review for an AI-native virtual practice and works with product on AI guardrails; EM boards are listed and AI governance and safety evaluation are preferred.",
+   "gap": "Asks for 5+ years post-residency and experience supervising virtual care at scale; for-profit; likely filled before July 2027.",
+   "status": "open",
+   "first_seen": "2026-10-24",
+   "last_seen": "2026-10-24",
+   "note": ""
+  },
+  {
+   "id": "mercor-general-physician-ai-model-evaluation-contract",
+   "title": "General Physician (AI model evaluation, contract)",
+   "employer": "Mercor",
+   "location": "Remote, US",
+   "employer_type": "contract",
+   "tier": "side",
+   "comp": "$150/hr",
+   "url": "https://work.mercor.com/jobs/list_AAABoRnCSK6MhF7a8UVK85GA",
+   "posted": "2026-10-08",
+   "fit": "Evaluating health AI models for a leading AI lab; EM is a listed background and fits your eval and rubric work as side income.",
+   "gap": "6-week project at 20+ hrs/week; prefers 3+ years post-residency.",
+   "status": "open",
+   "first_seen": "2026-10-24",
+   "last_seen": "2026-10-24",
    "note": ""
   }
  ]
