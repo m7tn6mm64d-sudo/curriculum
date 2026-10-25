@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-10-24",
+  "date": "2026-10-25",
   "quiet": false,
-  "new": 2,
-  "updates": 0,
+  "new": 1,
+  "updates": 1,
   "items": 2
  },
- "checked_at": "2026-10-25T01:46:08Z",
+ "checked_at": "2026-10-25T12:46:11Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -835,11 +835,11 @@
    "posted": "2026-10-13",
    "fit": "About 85% clinical-AI safety: setting safety standards, hallucination and omission evals, harm-severity rubrics and go/no-go release sign-off, which matches his LLM validation and RUAIH work. Link not opened; aggregators show it reposted Oct 13–19, 2026.",
    "gap": "for-profit ends PSLF; likely immediate fill, some sales support",
-   "status": "closed",
+   "status": "reposted",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-23",
-   "note": "checked 2026-10-23: Greenhouse posting removed (redirects to board with error)",
-   "status_date": "2026-10-23"
+   "last_seen": "2026-10-25",
+   "note": "checked 2026-10-25: live again on Avo's Greenhouse board as Medical Director, AI Safety (remote, $175K–$200K base): https://job-boards.greenhouse.io/avomdincdbaavo/jobs/4449751009",
+   "status_date": "2026-10-25"
   },
   {
    "id": "mercor-for-a-healthcare-ai-client-emergency-medicine-physician-md-ai-documentati",
@@ -958,6 +958,23 @@
    "status": "open",
    "first_seen": "2026-10-24",
    "last_seen": "2026-10-24",
+   "note": ""
+  },
+  {
+   "id": "optum-unitedhealth-group-senior-clinical-product-lead-optum-health-ai-product-of",
+   "title": "Senior Clinical Product Lead (Optum Health AI & Product Office)",
+   "employer": "Optum / UnitedHealth Group",
+   "location": "Remote (US)",
+   "employer_type": "for-profit",
+   "tier": "stretch",
+   "comp": "$159,300–$273,200",
+   "url": "https://remotive.com/remote/jobs/medical/senior-clinical-product-lead-6188754",
+   "posted": "",
+   "fit": "Clinical lead in a new, small AI product team, accountable for whether shipped AI products are clinically safe and measured on outcomes, which matches his clinical-AI validation and governance work. Link not opened; seen on Remotive as posted about Oct 24, 2026.",
+   "gap": "asks for 5+ years of clinical product experience; open to non-physicians; for-profit ends PSLF; likely immediate fill",
+   "status": "open",
+   "first_seen": "2026-10-25",
+   "last_seen": "2026-10-25",
    "note": ""
   }
  ]
