@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-10-25",
+  "date": "2026-10-26",
   "quiet": false,
-  "new": 1,
+  "new": 0,
   "updates": 1,
-  "items": 2
+  "items": 1
  },
- "checked_at": "2026-10-26T01:48:50Z",
+ "checked_at": "2026-10-26T12:49:05Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -294,11 +294,12 @@
    "posted": "",
    "fit": "A UC faculty job in LA for July 2027. Fellowship training and scholarship count in your favor.",
    "gap": "Clinical only. Any informatics role would be a separate negotiation with UCLA Health.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Opened Aug 7, 2026. Final date Jan 31, 2027. Checked today.",
-   "seeded": true
+   "last_seen": "2026-10-26",
+   "note": "checked 2026-10-26: UC Recruit JPF11052 returns 410, 'no longer accepting applications'",
+   "seeded": true,
+   "status_date": "2026-10-26"
   },
   {
    "id": "tjc-2026-7357",
