@@ -3,11 +3,11 @@
  "last_run": {
   "date": "2026-10-26",
   "quiet": false,
-  "new": 5,
+  "new": 1,
   "updates": 1,
-  "items": 5
+  "items": 2
  },
- "checked_at": "2026-10-26T20:54:35Z",
+ "checked_at": "2026-10-26T20:54:58Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -204,10 +204,10 @@
    "posted": "",
    "fit": "Enterprise clinical operations across hospitals: hospital medicine models, handoffs, care transitions, length of stay, readmissions. Close to your transfer and boarding work, and an est. 60/40 admin/clinical split.",
    "gap": "Asks for progressive physician leadership in a multi-hospital system; prior ACMO or medical director experience preferred. A big stretch now.",
-   "status": "changed",
+   "status": "closed",
    "first_seen": "2026-10-21",
    "last_seen": "2026-10-26",
-   "note": "Re-checked 2026-10-26: posting is live, Apply open, deadline extended to Mon Nov 2, 2026. This morning's closure came from a single failed fetch.",
+   "note": "checked 2026-10-26: UC San Diego employment posting returns 404",
    "seeded": true,
    "status_date": "2026-10-26"
   },
