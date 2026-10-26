@@ -3,11 +3,11 @@
  "last_run": {
   "date": "2026-10-26",
   "quiet": false,
-  "new": 0,
+  "new": 1,
   "updates": 1,
-  "items": 1
+  "items": 2
  },
- "checked_at": "2026-10-26T12:49:05Z",
+ "checked_at": "2026-10-26T17:40:23Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -204,11 +204,12 @@
    "posted": "",
    "fit": "Enterprise clinical operations across hospitals: hospital medicine models, handoffs, care transitions, length of stay, readmissions. Close to your transfer and boarding work, and an est. 60/40 admin/clinical split.",
    "gap": "Asks for progressive physician leadership in a multi-hospital system; prior ACMO or medical director experience preferred. A big stretch now.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Posted Sep 22, 2026. Extended deadline Nov 2, 2026. Checked today.",
-   "seeded": true
+   "last_seen": "2026-10-26",
+   "note": "checked 2026-10-26: UC San Diego employment posting returns 404",
+   "seeded": true,
+   "status_date": "2026-10-26"
   },
   {
    "id": "counsel-pae",
@@ -976,6 +977,23 @@
    "status": "open",
    "first_seen": "2026-10-25",
    "last_seen": "2026-10-25",
+   "note": ""
+  },
+  {
+   "id": "k-health-medical-director-health-system-partnerships",
+   "title": "Medical Director, Health System Partnerships",
+   "employer": "K Health",
+   "location": "Remote (US); NYC-area preferred, up to 30% travel",
+   "employer_type": "for-profit",
+   "tier": "watch",
+   "comp": "$265K-$285K + equity (per third-party listing)",
+   "url": "https://job-boards.greenhouse.io/khealthcareers",
+   "posted": "",
+   "fit": "Remote physician leadership of an AI-enabled 24/7 virtual clinic, overlapping his clinical-AI and operations work. Listed live on K Health's own board on 2026-10-26; posting itself not opened.",
+   "gap": "for-profit (ends PSLF), 5-10 yrs experience, 25-50% clinical in a primary-care-heavy clinic",
+   "status": "open",
+   "first_seen": "2026-10-26",
+   "last_seen": "2026-10-26",
    "note": ""
   }
  ]
