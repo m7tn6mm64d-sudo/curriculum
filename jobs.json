@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-10-26",
+  "date": "2026-10-27",
   "quiet": false,
-  "new": 6,
+  "new": 3,
   "updates": 2,
-  "items": 6
+  "items": 5
  },
- "checked_at": "2026-10-27T02:27:49Z",
+ "checked_at": "2026-10-27T12:50:03Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -819,11 +819,12 @@
    "posted": "",
    "fit": "A very close skill match: evals, error analysis, prompting, and managing about five clinical AI staff.",
    "gap": "Outside your geography. Asks for 3–5 years at a tech company.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Live. Checked today.",
-   "seeded": true
+   "last_seen": "2026-10-27",
+   "note": "2026-10-27: posting URL 404 on two fetches minutes apart and role no longer on Ambience's Ashby board.",
+   "seeded": true,
+   "status_date": "2026-10-27"
   },
   {
    "id": "avo-avomd-medical-director-ai-safety-clinical-solutions",
@@ -837,11 +838,11 @@
    "posted": "2026-10-13",
    "fit": "About 85% clinical-AI safety: setting safety standards, hallucination and omission evals, harm-severity rubrics and go/no-go release sign-off, which matches his LLM validation and RUAIH work. Link not opened; aggregators show it reposted Oct 13–19, 2026.",
    "gap": "for-profit ends PSLF; likely immediate fill, some sales support",
-   "status": "reposted",
+   "status": "changed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-25",
-   "note": "checked 2026-10-25: live again on Avo's Greenhouse board as Medical Director, AI Safety (remote, $175K–$200K base): https://job-boards.greenhouse.io/avomdincdbaavo/jobs/4449751009",
-   "status_date": "2026-10-25"
+   "last_seen": "2026-10-27",
+   "note": "2026-10-27: old req gone; now listed as Medical Director, AI Safety under Greenhouse req 4449751009 (updated Oct 20): https://job-boards.greenhouse.io/avomdincdbaavo/jobs/4449751009",
+   "status_date": "2026-10-27"
   },
   {
    "id": "mercor-for-a-healthcare-ai-client-emergency-medicine-physician-md-ai-documentati",
@@ -1045,6 +1046,57 @@
    "status": "open",
    "first_seen": "2026-10-26",
    "last_seen": "2026-10-26",
+   "note": ""
+  },
+  {
+   "id": "uc-davis-health-dept-of-emergency-medicine-emergency-medicine-assistant-associat",
+   "title": "Emergency Medicine Assistant/Associate/Full Professor, Clinical X or HSCP (3-4 full-time faculty, JPF07834)",
+   "employer": "UC Davis Health, Dept. of Emergency Medicine",
+   "location": "Sacramento, CA",
+   "employer_type": "public",
+   "tier": "pursue",
+   "comp": "$160,900-$422,300 (HSCP)",
+   "url": "https://recruit.ucdavis.edu/JPF07834",
+   "posted": "2026-09-09",
+   "fit": "Salaried UC academic EM line, FTE negotiable; UC Davis has a strong clinical informatics program, so informatics or clinical-AI time is a realistic ask. Rolling to Jun 30, 2027, which fits a July 2027 start; means relocating to Sacramento. Link not opened.",
+   "gap": "relocation; first review date (Oct 1) has passed",
+   "status": "open",
+   "first_seen": "2026-10-27",
+   "last_seen": "2026-10-27",
+   "note": ""
+  },
+  {
+   "id": "ucsf-dept-of-emergency-medicine-at-zuckerberg-san-francisco-general-emergency-me",
+   "title": "Emergency Medicine Junior Faculty (JPF06231)",
+   "employer": "UCSF Dept. of Emergency Medicine at Zuckerberg San Francisco General",
+   "location": "San Francisco, CA",
+   "employer_type": "public",
+   "tier": "pursue",
+   "comp": "$310,500-$357,500 base plus incentive",
+   "url": "https://aprecruit.ucsf.edu/JPF06231",
+   "posted": "",
+   "fit": "Salaried UC academic EM line at a public safety-net hospital, FTE negotiable; UCSF has a CMIO office and informatics programs to carve time from. Final date Mar 21, 2028 (next review Dec 1, 2026), so a July 2027 start works; means relocating. Link not opened.",
+   "gap": "prefers 3+ years experience or fellowship/advanced degree; relocation",
+   "status": "open",
+   "first_seen": "2026-10-27",
+   "last_seen": "2026-10-27",
+   "note": ""
+  },
+  {
+   "id": "stanford-university-school-of-medicine-dept-of-emergency-medicine-medical-direct",
+   "title": "Medical Director, Adult Emergency Department (Clinician Educator Line)",
+   "employer": "Stanford University School of Medicine, Dept. of Emergency Medicine",
+   "location": "Palo Alto, CA",
+   "employer_type": "nonprofit",
+   "tier": "stretch",
+   "comp": "$328,000-$364,000 base at Clinical Assistant Professor (aggregator, unverified)",
+   "url": "https://www.salarydr.com/jobs/emergency-medicine-stanford-california-b2bd2728",
+   "posted": "",
+   "fit": "Academic ED medical director role for a 66-bed ED; the ad favors ED operations, patient flow and throughput plus clinical informatics and digital health, which matches his ops and informatics work. Nonprofit keeps PSLF; means relocating. Seen about 17 days old on an aggregator; link not opened.",
+   "gap": "likely expects prior ED leadership; probably an immediate fill",
+   "status": "open",
+   "first_seen": "2026-10-27",
+   "last_seen": "2026-10-27",
    "note": ""
   }
  ]
