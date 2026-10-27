@@ -7,11 +7,7 @@
   "updates": 2,
   "items": 20
  },
-<<<<<<< Updated upstream
- "checked_at": "2026-10-27T19:07:36Z",
-=======
  "checked_at": "2026-10-27T19:07:48Z",
->>>>>>> Stashed changes
  "jobs": [
   {
    "id": "uci-jpf10379",

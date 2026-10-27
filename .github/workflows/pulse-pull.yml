@@ -40,6 +40,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Sync to latest main
+        # push/dispatch runs check out the triggering SHA, which can be stale by
+        # the time the concurrency queue releases them
+        run: git pull --rebase origin main
       - name: Regenerate feed from relay
         env:
           PULSE_RELAY_SECRET: ${{ secrets.PULSE_RELAY_SECRET }}
@@ -56,6 +60,10 @@ jobs:
           git config user.name "pulse-pull[bot]"
           git config user.email "actions@users.noreply.github.com"
           git pull --rebase --autostash origin main
+          if grep -lE '^(<<<<<<<|>>>>>>>) ' feed.xml pulse-status.json jobs.json; then
+            echo "autostash left conflict markers; refusing to commit"
+            exit 1
+          fi
           git add feed.xml pulse-status.json jobs.json
           if git diff --cached --quiet; then
             echo "feed unchanged — nothing to commit"
