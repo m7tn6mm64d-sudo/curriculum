@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-10-27",
+  "date": "2026-10-28",
   "quiet": false,
   "new": 3,
   "updates": 0,
   "items": 3
  },
- "checked_at": "2026-10-28T02:36:20Z",
+ "checked_at": "2026-10-28T12:49:21Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -1352,6 +1352,57 @@
    "status": "open",
    "first_seen": "2026-10-27",
    "last_seen": "2026-10-27",
+   "note": ""
+  },
+  {
+   "id": "kern-medical-kern-county-hospital-authority-faculty-medical-director-emergency-m",
+   "title": "Faculty Medical Director, Emergency Medicine (Simulation Laboratory)",
+   "employer": "Kern Medical (Kern County Hospital Authority)",
+   "location": "Bakersfield, CA",
+   "employer_type": "public",
+   "tier": "stretch",
+   "comp": "$350,000–$455,000 (per PracticeMatch listing)",
+   "url": "https://www.practicematch.com/physicians/job-details.cfm/1050823",
+   "posted": "2026-09-21",
+   "fit": "Salaried EM faculty medical director at a public county teaching hospital with an EM residency, so PSLF holds and admin FTE is built in; salaried line, FTE negotiable toward informatics or quality. Means relocating to Bakersfield; listing seen on Kern's PracticeMatch employer page, job page itself not opened.",
+   "gap": "role centers on running the simulation lab, which is not his background",
+   "status": "open",
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "note": ""
+  },
+  {
+   "id": "aptura-physician-clinical-ai-expert-remote-us",
+   "title": "Physician - Clinical AI Expert (Remote, US)",
+   "employer": "Aptura",
+   "location": "Remote (US)",
+   "employer_type": "contract",
+   "tier": "side",
+   "comp": "",
+   "url": "https://jobs.ashbyhq.com/aptura/ee0ec146-8cf2-4b90-967b-93c15a7f9127",
+   "posted": "2026-08-14",
+   "fit": "Short-term async contract designing clinical scenarios, validating reference answers and weighting grading rubrics to expose frontier-model failures, which is exactly his gold-set and rubric evaluation work.",
+   "gap": "pay not listed; short-term project",
+   "status": "open",
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
+   "note": ""
+  },
+  {
+   "id": "abridge-clinical-success-director",
+   "title": "Clinical Success Director",
+   "employer": "Abridge",
+   "location": "Remote (US)",
+   "employer_type": "for-profit",
+   "tier": "watch",
+   "comp": "$143,650–$216,580 + equity and bonus",
+   "url": "https://jobs.ashbyhq.com/abridge/ff567067-8918-4d4d-8441-1eae3f870c05",
+   "posted": "2026-10-26",
+   "fit": "Remote clinician lead for an ambient AI scribe vendor (clinician enablement, Epic documentation workflows, product feedback), matching his ambient scribe configuration and Epic build work.",
+   "gap": "open to PA/NP with pay below physician level; for-profit ends PSLF",
+   "status": "open",
+   "first_seen": "2026-10-28",
+   "last_seen": "2026-10-28",
    "note": ""
   }
  ]
