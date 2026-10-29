@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-10-28",
+  "date": "2026-10-29",
   "quiet": false,
-  "new": 3,
+  "new": 1,
   "updates": 0,
-  "items": 3
+  "items": 1
  },
- "checked_at": "2026-10-29T02:55:43Z",
+ "checked_at": "2026-10-29T13:00:12Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -1403,6 +1403,23 @@
    "status": "open",
    "first_seen": "2026-10-28",
    "last_seen": "2026-10-28",
+   "note": ""
+  },
+  {
+   "id": "keck-school-of-medicine-of-usc-dept-of-emergency-medicine-usc-arcadia-hospital-c",
+   "title": "Clinical Assistant Professor of Emergency Medicine (Part-Time), REQ20156321",
+   "employer": "Keck School of Medicine of USC, Dept. of Emergency Medicine (USC Arcadia Hospital)",
+   "location": "Arcadia, CA (Los Angeles County)",
+   "employer_type": "nonprofit",
+   "tier": "pursue",
+   "comp": "$100,000-$150,000 annual base (part-time)",
+   "url": "https://usccareers.usc.edu/job/arcadia/clinical-assistant-professor-of-emergency-medicine-part-time/1209/72134631680",
+   "posted": "2025-07-25",
+   "fit": "Salaried part-time USC academic EM line in LA County with bedside teaching; salaried line, FTE negotiable, and Keck has a CMIO office to carve informatics or clinical-AI time from. Keeps PSLF; posted 2025 but still live with an apply button on 2026-10-29, no closing date.",
+   "gap": "part-time clinical ad with no stated admin time; long-open posting may be filled at any time",
+   "status": "open",
+   "first_seen": "2026-10-29",
+   "last_seen": "2026-10-29",
    "note": ""
   }
  ]
