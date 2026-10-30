@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-10-29",
+  "date": "2026-10-30",
   "quiet": false,
-  "new": 1,
-  "updates": 0,
+  "new": 0,
+  "updates": 1,
   "items": 1
  },
- "checked_at": "2026-10-30T03:00:14Z",
+ "checked_at": "2026-10-30T12:46:10Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -114,11 +114,12 @@
    "posted": "",
    "fit": "The duties are your skill set: LLM annotation for UM decisions, precision and recall readiness reviews, governance from shadow mode to production, and clinical lead for the foundation-model teams.",
    "gap": "Requires significant UM and InterQual operations leadership. For-profit.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Posted Aug 11, 2026. Can close early. Checked today.",
-   "seeded": true
+   "last_seen": "2026-10-30",
+   "note": "checked 2026-10-30: UHG careers URL 404 on two fetches minutes apart; role absent from UHG careers search",
+   "seeded": true,
+   "status_date": "2026-10-30"
   },
   {
    "id": "doctronic-sce",
