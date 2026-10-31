@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-10-30",
+  "date": "2026-10-31",
   "quiet": false,
-  "new": 0,
-  "updates": 1,
+  "new": 1,
+  "updates": 0,
   "items": 1
  },
- "checked_at": "2026-10-31T02:46:48Z",
+ "checked_at": "2026-10-31T12:47:03Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -1421,6 +1421,23 @@
    "status": "open",
    "first_seen": "2026-10-29",
    "last_seen": "2026-10-29",
+   "note": ""
+  },
+  {
+   "id": "wheel-medical-director-clinical-program-design",
+   "title": "Medical Director, Clinical Program Design",
+   "employer": "Wheel",
+   "location": "Remote, US",
+   "employer_type": "for-profit",
+   "tier": "stretch",
+   "comp": "$250,000–$290,000 + 15% bonus + stock options",
+   "url": "https://jobs.ashbyhq.com/wheel/8cabd472-8032-474b-bc04-02b460d0ef92",
+   "posted": "2026-08-12",
+   "fit": "Owns the protocols and clinical QA program for a virtual urgent and on-demand care network, using AI to scale QA and turning protocols into platform logic; EM boards are accepted and EHR/CDS comfort is a plus. Live on Wheel's board today; likely an immediate fill, not July 2027.",
+   "gap": "wants prior team leadership in telehealth and virtual-care experience; for-profit ends PSLF",
+   "status": "open",
+   "first_seen": "2026-10-31",
+   "last_seen": "2026-10-31",
    "note": ""
   }
  ]
