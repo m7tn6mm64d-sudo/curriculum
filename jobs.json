@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-10-31",
+  "date": "2026-11-01",
   "quiet": false,
   "new": 1,
   "updates": 0,
   "items": 1
  },
- "checked_at": "2026-11-01T02:39:39Z",
+ "checked_at": "2026-11-01T13:45:39Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -1438,6 +1438,23 @@
    "status": "open",
    "first_seen": "2026-10-31",
    "last_seen": "2026-10-31",
+   "note": ""
+  },
+  {
+   "id": "devoted-health-devoted-medical-medical-director-virtual-urgent-care-on-demand-te",
+   "title": "Medical Director, Virtual Urgent Care & On-Demand Telehealth (Build & Scale 24/7 Service)",
+   "employer": "Devoted Health (Devoted Medical)",
+   "location": "Remote, US",
+   "employer_type": "for-profit",
+   "tier": "stretch",
+   "comp": "$335K–$387K plus equity (per listing)",
+   "url": "https://jobs.generalcatalyst.com/companies/devoted-health/jobs/96931538-medical-director-virtual-urgent-care-on-demand-telehealth-build-scale-24-7-service",
+   "posted": "2026-10-14",
+   "fit": "Builds a 24/7 virtual urgent care and triage service for an AI-native medical group, which uses his EM operations, throughput and quality-and-safety work; urgent care experience is preferred. New req posted Oct 14, 2026 (an earlier version had closed); link not opened, likely an immediate fill.",
+   "gap": "for-profit ends PSLF; wants experience building and leading a clinical team",
+   "status": "open",
+   "first_seen": "2026-11-01",
+   "last_seen": "2026-11-01",
    "note": ""
   }
  ]
