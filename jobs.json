@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-11-02",
-  "quiet": true,
+  "date": "2026-11-03",
+  "quiet": false,
   "new": 0,
-  "updates": 0,
-  "items": 0
+  "updates": 2,
+  "items": 2
  },
- "checked_at": "2026-11-03T04:04:50Z",
+ "checked_at": "2026-11-03T13:46:16Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -712,11 +712,12 @@
    "posted": "",
    "fit": "A commercial clinical lead who works with CMIOs and CIOs. Your Abridge configuration work is directly relevant.",
    "gap": "Sales-facing, with heavy travel.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "First seen Aug 3, 2026. I couldn't confirm it's still open.",
-   "seeded": true
+   "last_seen": "2026-11-03",
+   "note": "Checked 2026-11-03: Ashby URL 404 on two fetches and role absent from Abridge's Ashby job board.",
+   "seeded": true,
+   "status_date": "2026-11-03"
   },
   {
    "id": "included-ai-md",
@@ -802,11 +803,12 @@
    "posted": "",
    "fit": "The work is your RUAIH work: AI intake, risk review, governance committees and vendor due diligence.",
    "gap": "",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Live, no posted date.",
-   "seeded": true
+   "last_seen": "2026-11-03",
+   "note": "Checked 2026-11-03: posting URL 404 on two fetches and no longer in MemorialCare careers search.",
+   "seeded": true,
+   "status_date": "2026-11-03"
   },
   {
    "id": "ambience-manager",
