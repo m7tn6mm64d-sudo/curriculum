@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-11-03",
+  "date": "2026-11-04",
   "quiet": false,
-  "new": 0,
-  "updates": 2,
-  "items": 2
+  "new": 1,
+  "updates": 0,
+  "items": 1
  },
- "checked_at": "2026-11-04T03:21:37Z",
+ "checked_at": "2026-11-04T13:47:42Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -1457,6 +1457,23 @@
    "status": "open",
    "first_seen": "2026-11-01",
    "last_seen": "2026-11-01",
+   "note": ""
+  },
+  {
+   "id": "stanford-university-school-of-medicine-dept-of-emergency-medicine-academic-emerg",
+   "title": "Academic Emergency Medicine Faculty (University Medical Line, Assistant/Associate/Professor)",
+   "employer": "Stanford University School of Medicine, Dept. of Emergency Medicine",
+   "location": "Stanford / Palo Alto, CA",
+   "employer_type": "nonprofit",
+   "tier": "pursue",
+   "comp": "",
+   "url": "https://facultypositions.stanford.edu/en-us/job/493475/academic-emergency-medicine-faculty",
+   "posted": "",
+   "fit": "Salaried academic EM line at a department with a strong informatics and digital-health ecosystem, so protected clinical-AI or informatics FTE is negotiable at offer; means relocating to the Bay Area. Link not opened (host blocked); found live on Stanford EM careers page via search, posting date not shown.",
+   "gap": "UML line expects scholarship; precision-EM research focus favored",
+   "status": "open",
+   "first_seen": "2026-11-04",
+   "last_seen": "2026-11-04",
    "note": ""
   }
  ]
