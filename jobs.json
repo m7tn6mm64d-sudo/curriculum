@@ -3,11 +3,11 @@
  "last_run": {
   "date": "2026-11-05",
   "quiet": false,
-  "new": 0,
-  "updates": 1,
-  "items": 1
+  "new": 2,
+  "updates": 3,
+  "items": 5
  },
- "checked_at": "2026-11-05T22:55:25Z",
+ "checked_at": "2026-11-05T23:07:55Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -442,11 +442,12 @@
    "posted": "",
    "fit": "The highest hourly rate found. IM, FM and EM preferred.",
    "gap": "Seen only on an aggregator. Includes a 25-minute AI interview.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Posted Oct 6, 2026 (aggregator copy).",
-   "seeded": true
+   "last_seen": "2026-11-05",
+   "note": "Checked 2026-11-05: the listing page returns 410 and says 'Position closed'.",
+   "seeded": true,
+   "status_date": "2026-11-05"
   },
   {
    "id": "turing-em",
@@ -478,11 +479,12 @@
    "posted": "",
    "fit": "Rubric writing, hard test cases and safety grading. EM backgrounds preferred.",
    "gap": "A 20-hour weekly minimum, and the client isn't named.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Posted Sep 17, 2026.",
-   "seeded": true
+   "last_seen": "2026-11-05",
+   "note": "Checked 2026-11-05: the listing page returns 410 and says 'Position closed'.",
+   "seeded": true,
+   "status_date": "2026-11-05"
   },
   {
    "id": "mercor-pool",
@@ -1474,6 +1476,40 @@
    "status": "open",
    "first_seen": "2026-11-04",
    "last_seen": "2026-11-04",
+   "note": ""
+  },
+  {
+   "id": "ucla-health-assistant-associate-director-intelligent-automation",
+   "title": "Assistant/Associate Director, Intelligent Automation",
+   "employer": "UCLA Health",
+   "location": "Los Angeles (flexible hybrid)",
+   "employer_type": "public",
+   "tier": "stretch",
+   "comp": "$132,300–$307,100 (offers expected between minimum and midpoint)",
+   "url": "https://www.uclahealthcareers.org/job/23807781/assistant-associate-director-intelligent-automation-los-angeles-ca/",
+   "posted": "2026-09-03",
+   "fit": "Pitch lead: leads UCLA Health's AI-enabled automation roadmap, team and governance standards (human oversight, validation, performance monitoring). A physician makes the patient-safety signoff and clinician adoption credible. Close to your RUAIH and LLM validation work.",
+   "gap": "Wants a track record running an automation portfolio and measuring ROI. Pay tops out near $307K and offers are expected at or below midpoint, well under $350K, so pay is a gap to negotiate.",
+   "status": "open",
+   "first_seen": "2026-11-05",
+   "last_seen": "2026-11-05",
+   "note": ""
+  },
+  {
+   "id": "us-acute-care-solutions-usacs-emergency-medicine-medical-director-providence-mis",
+   "title": "Emergency Medicine Medical Director, Providence Mission Hospital",
+   "employer": "US Acute Care Solutions (USACS)",
+   "location": "Mission Viejo",
+   "employer_type": "for-profit",
+   "tier": "stretch",
+   "comp": "$246/hour (PracticeMatch listing)",
+   "url": "https://www.usacs.com/careers/emergency-medicine-medical-director-providence-mission-hospital-mission-viejo",
+   "posted": "",
+   "fit": "ED medical director at a Level II trauma center with about 73,000 visits a year in Orange County. It uses your throughput, boarding and ED quality work. Link not opened (the USACS page blocks bots); a job-board copy showed it posted about 4 days ago.",
+   "gap": "For-profit, so it ends PSLF. It likely wants prior ED leadership and an immediate start, not July 2027.",
+   "status": "open",
+   "first_seen": "2026-11-05",
+   "last_seen": "2026-11-05",
    "note": ""
   }
  ]
