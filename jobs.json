@@ -2,12 +2,12 @@
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
   "date": "2026-11-05",
-  "quiet": true,
+  "quiet": false,
   "new": 0,
-  "updates": 0,
-  "items": 0
+  "updates": 1,
+  "items": 1
  },
- "checked_at": "2026-11-05T13:47:18Z",
+ "checked_at": "2026-11-05T22:55:25Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -205,12 +205,12 @@
    "posted": "",
    "fit": "Enterprise clinical operations across hospitals: hospital medicine models, handoffs, care transitions, length of stay, readmissions. Close to your transfer and boarding work, and an est. 60/40 admin/clinical split.",
    "gap": "Asks for progressive physician leadership in a multi-hospital system; prior ACMO or medical director experience preferred. A big stretch now.",
-   "status": "changed",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-26",
-   "note": "Re-checked 2026-10-26: posting is live, Apply open, deadline extended to Mon Nov 2, 2026. This morning's closure came from a single failed fetch.",
+   "last_seen": "2026-11-05",
+   "note": "Checked 2026-11-05: req 141479 returns 404 on two fetches minutes apart, not found in search, and its extended Nov 2, 2026 deadline has passed.",
    "seeded": true,
-   "status_date": "2026-10-26"
+   "status_date": "2026-11-05"
   },
   {
    "id": "counsel-pae",
