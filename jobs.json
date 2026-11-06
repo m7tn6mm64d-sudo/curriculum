@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-11-05",
+  "date": "2026-11-06",
   "quiet": false,
-  "new": 2,
-  "updates": 3,
-  "items": 5
+  "new": 0,
+  "updates": 1,
+  "items": 1
  },
- "checked_at": "2026-11-06T03:43:04Z",
+ "checked_at": "2026-11-06T13:46:45Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -1150,10 +1150,11 @@
    "posted": "",
    "fit": "Salaried line, FTE negotiable: full-time academic EM faculty at a high-volume Level 1 ED with an EM residency, with a UCSF appointment. Listed on UCSF Recruit 2026-10-27.",
    "gap": "Relocation to Fresno; employer is the faculty medical group, so PSLF status unconfirmed.",
-   "status": "open",
+   "status": "changed",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-10-27",
-   "note": ""
+   "last_seen": "2026-11-06",
+   "note": "Checked 2026-11-06: UCSF Recruit now shows final date Dec 30, 2026 (last review Oct 31, 2026); apply before then for a July 2027 start.",
+   "status_date": "2026-11-06"
   },
   {
    "id": "ucd-em-jpf07835",
