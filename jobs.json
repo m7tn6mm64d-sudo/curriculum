@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-11-06",
+  "date": "2026-11-07",
   "quiet": false,
   "new": 0,
   "updates": 1,
   "items": 1
  },
- "checked_at": "2026-11-07T03:16:34Z",
+ "checked_at": "2026-11-07T13:46:35Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -461,11 +461,12 @@
    "posted": "",
    "fit": "The best-paying EM-specific evaluation work found: writing EM scenarios and grading model reasoning.",
    "gap": "20–40 hours a week, with at least 4 hours a day overlapping Pacific time. Too heavy during fellowship except in a vacation block.",
-   "status": "open",
+   "status": "changed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Shown as posted Oct 10 on Remotive. Checked today.",
-   "seeded": true
+   "last_seen": "2026-11-07",
+   "note": "Checked 2026-11-07: old link 404s, but the same Turing EM LLM-training role ($200-300/hr, remote US) is live at turing.betterteam.com/remote-physician-emergency-medicine-40",
+   "seeded": true,
+   "status_date": "2026-11-07"
   },
   {
    "id": "weekday-hls",
