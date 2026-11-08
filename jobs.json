@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-11-07",
+  "date": "2026-11-08",
   "quiet": false,
-  "new": 0,
+  "new": 2,
   "updates": 1,
-  "items": 1
+  "items": 3
  },
- "checked_at": "2026-11-08T02:45:18Z",
+ "checked_at": "2026-11-08T13:47:11Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -535,11 +535,12 @@
    "posted": "",
    "fit": "Lists clinical informatics as a bonus qualification.",
    "gap": "Generic task work.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Evergreen page with no date.",
-   "seeded": true
+   "last_seen": "2026-11-08",
+   "note": "Medicine expert page returned 404 on two fetches on 2026-11-08; Outlier's site now lists only other specialty pages",
+   "seeded": true,
+   "status_date": "2026-11-08"
   },
   {
    "id": "va-telec",
@@ -1512,6 +1513,40 @@
    "status": "open",
    "first_seen": "2026-11-05",
    "last_seen": "2026-11-05",
+   "note": ""
+  },
+  {
+   "id": "gramian-consulting-group-for-an-ai-client-emergency-medicine-physician-ai-clinic",
+   "title": "Emergency Medicine Physician (AI Clinical Evaluation)",
+   "employer": "Gramian Consulting Group (for an AI client)",
+   "location": "Remote (US)",
+   "employer_type": "contract",
+   "tier": "side",
+   "comp": "",
+   "url": "https://apply.workable.com/gramian/jobs/view/2A804B58F7",
+   "posted": "2026-10-31",
+   "fit": "Remote 12-week EM contract writing gold-standard answers, long-chart cases and evaluation rubrics for clinical AI, which matches his LLM-evaluation and rubric work; 20-40 hrs/week.",
+   "gap": "asks about 8+ years of EM practice; pay not posted",
+   "status": "open",
+   "first_seen": "2026-11-08",
+   "last_seen": "2026-11-08",
+   "note": ""
+  },
+  {
+   "id": "opentrain-ai-for-an-ai-client-emergency-medicine-physician-md-do-ai-evaluation",
+   "title": "Emergency Medicine Physician (MD/DO), AI evaluation",
+   "employer": "OpenTrain AI (for an AI client)",
+   "location": "Remote (US)",
+   "employer_type": "contract",
+   "tier": "side",
+   "comp": "",
+   "url": "https://www.opentrain.ai/jobs/emergency-medicine-ai-evaluation-physician--cmw4vd6yd003608l51akt5wpl/",
+   "posted": "2026-11-06",
+   "fit": "Remote contract grading AI answers to emergency medicine questions, 20-40 hrs/week; fits as side work. Link not opened (host blocked in this sandbox).",
+   "gap": "pay and length not confirmed",
+   "status": "open",
+   "first_seen": "2026-11-08",
+   "last_seen": "2026-11-08",
    "note": ""
   }
  ]
