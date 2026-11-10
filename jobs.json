@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-11-09",
-  "quiet": true,
-  "new": 0,
+  "date": "2026-11-10",
+  "quiet": false,
+  "new": 1,
   "updates": 0,
-  "items": 0
+  "items": 1
  },
- "checked_at": "2026-11-10T00:43:20Z",
+ "checked_at": "2026-11-10T13:46:47Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -1547,6 +1547,23 @@
    "status": "open",
    "first_seen": "2026-11-08",
    "last_seen": "2026-11-08",
+   "note": ""
+  },
+  {
+   "id": "unitedhealth-group-optum-sr-medical-director-of-clinical-ai-capability-developme",
+   "title": "Sr. Medical Director of Clinical AI Capability Development (Remote)",
+   "employer": "UnitedHealth Group / Optum",
+   "location": "Remote (US)",
+   "employer_type": "for-profit",
+   "tier": "stretch",
+   "comp": "$292,300–$438,500",
+   "url": "https://careers.unitedhealthgroup.com/job/minnetonka/sr-medical-director-of-clinical-ai-capability-development-remote/34088/102958123312",
+   "posted": "2026-11-06",
+   "fit": "Leads clinical input on an AI product portfolio: testing rubrics, audits, performance monitoring and clinical performance standards, and oversees the AI evaluation team and vendors, which matches his production LLM-evaluation and validation work. Posting may close early on applicant volume, so this is an immediate fill, not a July 2027 start.",
+   "gap": "requires a master's in statistics, epidemiology or health services research plus 3+ years of health-plan/QI and team-lead experience; for-profit ends PSLF",
+   "status": "open",
+   "first_seen": "2026-11-10",
+   "last_seen": "2026-11-10",
    "note": ""
   }
  ]
