@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-11-10",
+  "date": "2026-11-11",
   "quiet": false,
-  "new": 1,
-  "updates": 0,
-  "items": 1
+  "new": 3,
+  "updates": 2,
+  "items": 5
  },
- "checked_at": "2026-11-11T03:09:28Z",
+ "checked_at": "2026-11-11T13:47:31Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -982,10 +982,11 @@
    "posted": "",
    "fit": "Clinical lead in a new, small AI product team, accountable for whether shipped AI products are clinically safe and measured on outcomes, which matches his clinical-AI validation and governance work. Link not opened; seen on Remotive as posted about Oct 24, 2026.",
    "gap": "asks for 5+ years of clinical product experience; open to non-physicians; for-profit ends PSLF; likely immediate fill",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-25",
-   "last_seen": "2026-10-25",
-   "note": ""
+   "last_seen": "2026-11-11",
+   "note": "Remotive URL 404 on two fetches and role not on UHG careers board (checked 2026-11-11)",
+   "status_date": "2026-11-11"
   },
   {
    "id": "k-health-medical-director-health-system-partnerships",
@@ -1459,10 +1460,11 @@
    "posted": "2026-10-14",
    "fit": "Builds a 24/7 virtual urgent care and triage service for an AI-native medical group, which uses his EM operations, throughput and quality-and-safety work; urgent care experience is preferred. New req posted Oct 14, 2026 (an earlier version had closed); link not opened, likely an immediate fill.",
    "gap": "for-profit ends PSLF; wants experience building and leading a clinical team",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-11-01",
-   "last_seen": "2026-11-01",
-   "note": ""
+   "last_seen": "2026-11-11",
+   "note": "Posting page says no longer accepting applications (checked 2026-11-11)",
+   "status_date": "2026-11-11"
   },
   {
    "id": "stanford-university-school-of-medicine-dept-of-emergency-medicine-academic-emerg",
@@ -1564,6 +1566,57 @@
    "status": "open",
    "first_seen": "2026-11-10",
    "last_seen": "2026-11-10",
+   "note": ""
+  },
+  {
+   "id": "uci-health-los-alamitos-clinical-associate-physician-emergency-medicine-per-diem",
+   "title": "Clinical Associate Physician – Emergency Medicine, per diem (Los Alamitos)",
+   "employer": "UCI Health – Los Alamitos",
+   "location": "Los Alamitos, CA (Orange County)",
+   "employer_type": "public",
+   "tier": "fallback",
+   "comp": "$210/hr + $30/hr night differential",
+   "url": "https://jobs.uci.edu/careers-home/jobs/155630",
+   "posted": "2026-11-10",
+   "fit": "Per-diem ED shifts at a UCI Health hospital, his own system, so it keeps PSLF. Separate from the tracked 51% Los Alamitos line. No guaranteed hours.",
+   "gap": "Per diem, so no FTE to negotiate; immediate fill",
+   "status": "open",
+   "first_seen": "2026-11-11",
+   "last_seen": "2026-11-11",
+   "note": ""
+  },
+  {
+   "id": "uc-irvine-school-of-medicine-dept-of-emergency-medicine-associate-physician-staf",
+   "title": "Associate Physician (Staff Physician, Emergency Medicine)",
+   "employer": "UC Irvine School of Medicine, Dept. of Emergency Medicine",
+   "location": "Orange and Irvine, CA (UCI Health EDs and urgent care)",
+   "employer_type": "public",
+   "tier": "fallback",
+   "comp": "",
+   "url": "https://jobs.uci.edu/careers-home/jobs/152262",
+   "posted": "2026-10-12",
+   "fit": "Staff ED physician at UCI Health Orange and Irvine plus urgent care. Public employer keeps PSLF and it's his home department; listed as contractor type, so it looks shift-based.",
+   "gap": "FTE and pay not stated; looks shift-based with no admin time",
+   "status": "open",
+   "first_seen": "2026-11-11",
+   "last_seen": "2026-11-11",
+   "note": ""
+  },
+  {
+   "id": "ucsf-dept-of-emergency-medicine-emergency-medicine-faculty-ultrasound-focused-jp",
+   "title": "Emergency Medicine Faculty, ultrasound-focused (JPF05942)",
+   "employer": "UCSF Dept. of Emergency Medicine",
+   "location": "San Francisco, CA (Parnassus, ZSFG, Benioff Children's)",
+   "employer_type": "public",
+   "tier": "watch",
+   "comp": "UC scale $154,700–$405,900 base plus HSCP",
+   "url": "https://aprecruit.ucsf.edu/JPF05942",
+   "posted": "2026-02-05",
+   "fit": "Salaried UC academic EM line, FTE negotiable, at a department with a strong clinical informatics division; would mean relocating. The ad centers on emergency ultrasound teaching and scholarship.",
+   "gap": "Wants ultrasound fellowship training, which he lacks; final date Aug 5, 2027",
+   "status": "open",
+   "first_seen": "2026-11-11",
+   "last_seen": "2026-11-11",
    "note": ""
   }
  ]
