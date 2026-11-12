@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-11-11",
+  "date": "2026-11-12",
   "quiet": false,
-  "new": 3,
+  "new": 0,
   "updates": 2,
-  "items": 5
+  "items": 2
  },
- "checked_at": "2026-11-12T04:22:46Z",
+ "checked_at": "2026-11-12T13:49:22Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -463,10 +463,10 @@
    "gap": "20–40 hours a week, with at least 4 hours a day overlapping Pacific time. Too heavy during fellowship except in a vacation block.",
    "status": "changed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-07",
-   "note": "Checked 2026-11-07: old link 404s, but the same Turing EM LLM-training role ($200-300/hr, remote US) is live at turing.betterteam.com/remote-physician-emergency-medicine-40",
+   "last_seen": "2026-11-12",
+   "note": "Checked 2026-11-12: both earlier Turing links now say 'This job is now closed'; the same remote EM LLM-training role ($200-300/hr) was reposted Nov 11 at turing.betterteam.com/remote-physician-emergency-medicine-44",
    "seeded": true,
-   "status_date": "2026-11-07"
+   "status_date": "2026-11-12"
   },
   {
    "id": "weekday-hls",
@@ -698,11 +698,12 @@
    "posted": "",
    "fit": "Leads evaluation and testing of AI-enabled and EHR-integrated software, with acceptance criteria tied to clinical workflows. That is your validation work.",
    "gap": "Asks for 10+ years of evaluation or test leadership. Pay is below physician level.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Posted about 8 days ago (aggregator copy).",
-   "seeded": true
+   "last_seen": "2026-11-12",
+   "note": "Checked 2026-11-12: posting URL 404s on two fetches minutes apart; only copies found show an April 22 post with a June 22, 2026 application window, none live",
+   "seeded": true,
+   "status_date": "2026-11-12"
   },
   {
    "id": "abridge-spe",
