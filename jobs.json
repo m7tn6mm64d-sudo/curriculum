@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-11-12",
+  "date": "2026-11-13",
   "quiet": false,
   "new": 0,
-  "updates": 2,
-  "items": 2
+  "updates": 1,
+  "items": 1
  },
- "checked_at": "2026-11-13T03:38:57Z",
+ "checked_at": "2026-11-13T14:34:22Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -864,10 +864,11 @@
    "posted": "2026-10-06",
    "fit": "Part-time hourly work reviewing ED charts and checking AI-generated ED arrival summaries for omissions and hallucinations; this is his EM and eval skill set exactly. Link not opened; date is from an aggregator capture.",
    "gap": "",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": ""
+   "last_seen": "2026-11-13",
+   "note": "Checked 2026-11-13: Mercor page says this listing is no longer accepting applications (general talent network still open).",
+   "status_date": "2026-11-13"
   },
   {
    "id": "gramian-consulting-group-for-an-ai-client-general-physician-ai-evaluation",
