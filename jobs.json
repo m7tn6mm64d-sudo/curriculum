@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-11-13",
+  "date": "2026-11-14",
   "quiet": false,
-  "new": 0,
-  "updates": 1,
+  "new": 1,
+  "updates": 0,
   "items": 1
  },
- "checked_at": "2026-11-14T03:37:50Z",
+ "checked_at": "2026-11-14T13:48:38Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -1619,6 +1619,23 @@
    "status": "open",
    "first_seen": "2026-11-11",
    "last_seen": "2026-11-11",
+   "note": ""
+  },
+  {
+   "id": "opentrain-ai-for-an-ai-client-emergency-medicine-ai-evaluation-physician-part-ti",
+   "title": "Emergency Medicine AI Evaluation Physician (part-time contract)",
+   "employer": "OpenTrain AI (for an AI client)",
+   "location": "Remote (US)",
+   "employer_type": "contract",
+   "tier": "side",
+   "comp": "up to $180/hour",
+   "url": "https://www.opentrain.ai/jobs/emergency-medicine-ai-evaluation-physician--cmw3tv4fw00i108lghgoughus/",
+   "posted": "2026-11-05",
+   "fit": "Remote part-time contract for US-licensed emergency physicians to evaluate clinical AI output, sized to fit around shifts; uses his LLM evaluation and rubric work. Separate posting from the OpenTrain EM role already tracked. Link not opened (host blocked in this run); search result shows it posted Nov 5, 2026.",
+   "gap": "",
+   "status": "open",
+   "first_seen": "2026-11-14",
+   "last_seen": "2026-11-14",
    "note": ""
   }
  ]
