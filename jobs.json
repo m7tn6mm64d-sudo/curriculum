@@ -7,7 +7,7 @@
   "updates": 0,
   "items": 1
  },
- "checked_at": "2026-11-15T23:20:00Z",
+ "checked_at": "2026-11-15T23:55:00Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -846,10 +846,10 @@
    "posted": "2026-10-13",
    "fit": "About 85% clinical-AI safety: setting safety standards, hallucination and omission evals, harm-severity rubrics and go/no-go release sign-off, which matches his LLM validation and RUAIH work. Link not opened; aggregators show it reposted Oct 13–19, 2026.",
    "gap": "for-profit ends PSLF; likely immediate fill, some sales support",
-   "status": "changed",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-27",
-   "note": "2026-10-27: old req gone; now listed as Medical Director, AI Safety under Greenhouse req 4449751009 (updated Oct 20): https://job-boards.greenhouse.io/avomdincdbaavo/jobs/4449751009",
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Greenhouse link now redirects to the Avo jobs board; posting gone.",
    "status_date": "2026-10-27"
   },
   {
@@ -882,10 +882,10 @@
    "posted": "2026-10-12",
    "fit": "Contract review of AI-generated diagnoses, plans and summaries for accuracy and safety by US-licensed physicians. Link not opened.",
    "gap": "pay and hours not listed",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: RemoWork: \"Position closed.\""
   },
   {
    "id": "venice-family-clinic-associate-medical-director-clinical-informatics",
@@ -916,10 +916,10 @@
    "posted": "about 2026-10-12 (aggregator showed 10 days old)",
    "fit": "Physician lead for Aetna's member-facing clinical AI strategy, sourcing and evaluating AI products, which matches his AI validation and governance work. Link not opened.",
    "gap": "remote limited to the Northeast; for-profit ends PSLF",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-22",
-   "last_seen": "2026-10-22",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Listing \"has expired or been removed.\""
   },
   {
    "id": "counsel-health-medical-director",
@@ -969,8 +969,8 @@
    "gap": "6-week project at 20+ hrs/week; prefers 3+ years post-residency.",
    "status": "open",
    "first_seen": "2026-10-24",
-   "last_seen": "2026-10-24",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open on Mercor ($150/hr shown)."
   },
   {
    "id": "optum-unitedhealth-group-senior-clinical-product-lead-optum-health-ai-product-of",
@@ -1004,8 +1004,8 @@
    "gap": "for-profit (ends PSLF), 5-10 yrs experience, 25-50% clinical in a primary-care-heavy clinic",
    "status": "open",
    "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open on the K Health Greenhouse board (remote)."
   },
   {
    "id": "ahs-highland-em-fte",
@@ -1021,8 +1021,8 @@
    "gap": "Bay Area relocation; hourly rate below SoCal academic pay; ad is clinical only.",
    "status": "open",
    "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: 0.8 FTE req open, posted Oct 12, 2026."
   },
   {
    "id": "ahs-highland-em-perdiem",
@@ -1038,8 +1038,8 @@
    "gap": "Per diem (FTE 0.01); Bay Area.",
    "status": "open",
    "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open, posted Aug 13, 2026."
   },
   {
    "id": "ladhs-harbor-em-core-faculty",
@@ -1065,15 +1065,15 @@
    "location": "Sacramento, CA",
    "employer_type": "public",
    "tier": "pursue",
-   "comp": "$160,900-$422,300 (HSCP)",
+   "comp": "$160,900–$422,300",
    "url": "https://recruit.ucdavis.edu/JPF07834",
    "posted": "2026-09-09",
    "fit": "Salaried UC academic EM line, FTE negotiable; UC Davis has a strong clinical informatics program, so informatics or clinical-AI time is a realistic ask. Rolling to Jun 30, 2027, which fits a July 2027 start; means relocating to Sacramento. Link not opened.",
    "gap": "relocation; first review date (Oct 1) has passed",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-10-27",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open. Final date Jun 30, 2027 (review date was Oct 1, 2026)."
   },
   {
    "id": "ucsf-dept-of-emergency-medicine-at-zuckerberg-san-francisco-general-emergency-me",
@@ -1150,15 +1150,15 @@
    "location": "Fresno, Community Regional Medical Center (relocation)",
    "employer_type": "unknown",
    "tier": "stretch",
-   "comp": "$225K–$310K (aggregator)",
+   "comp": "$225,000–$310,000 (Inspire Health estimate)",
    "url": "https://aprecruit.ucsf.edu/JPF05605",
    "posted": "",
    "fit": "Salaried line, FTE negotiable: full-time academic EM faculty at a high-volume Level 1 ED with an EM residency, with a UCSF appointment. Listed on UCSF Recruit 2026-10-27.",
    "gap": "Relocation to Fresno; employer is the faculty medical group, so PSLF status unconfirmed.",
-   "status": "changed",
+   "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-06",
-   "note": "Checked 2026-11-06: UCSF Recruit now shows final date Dec 30, 2026 (last review Oct 31, 2026); apply before then for a July 2027 start.",
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open. Review date Nov 15, 2026; final date Dec 30, 2026.",
    "status_date": "2026-11-06"
   },
   {
@@ -1175,8 +1175,8 @@
    "gap": "Research series expects funding and publications; relocation.",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-10-27",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open. Next review date Dec 1, 2026; final date Jun 30, 2027."
   },
   {
    "id": "fresno-va-em-chief",
@@ -1190,10 +1190,10 @@
    "posted": "",
    "fit": "ED leadership at an academic-affiliated VA: clinical operations, team leadership, teaching and research support. Federal service keeps PSLF. Seen on Google Jobs ~27 days old.",
    "gap": "Leadership experience expected; relocation.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-10-27",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: PracticeMatch: \"This opportunity is no longer available.\""
   },
   {
    "id": "sutter-em-informatics",
@@ -1207,10 +1207,10 @@
    "posted": "",
    "fit": "An EM-specific physician informatics leader role: Epic optimization, ED workflows, training. Useful as the model for a 0.25 FTE informatics carve-out.",
    "gap": "Requires concurrent EM practice at Sutter, Epic cert within 180 days, 8 years experience; NorCal.",
-   "status": "open",
+   "status": "changed",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-10-27",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Vaia aggregator page still loads (EM boards required, informatics leadership for the ED), but Sutter's own clinician careers site returns 0 results for \"informatics\". Likely filled; confirm with Sutter before applying."
   },
   {
    "id": "la-county-chief-physician",
@@ -1260,8 +1260,8 @@
    "gap": "Per diem; San Bernardino County.",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-10-27",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open on Marit, posted 9 days ago."
   },
   {
    "id": "cvs-oakstreet-smd-ci",
@@ -1275,10 +1275,10 @@
    "posted": "",
    "fit": "Remote Epic-informatics leadership: roadmaps, governance, clinician workflow and upgrades across Oak Street centers and quality/Stars. Seen on Google Jobs 2–5 days old; link not opened.",
    "gap": "For-profit ends PSLF; primary-care setting; senior leadership bar.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-10-27",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Stored link 404s and the role is not on the CVS Health careers site (search for clinical informatics medical director returns no match)."
   },
   {
    "id": "included-md-clinical-affairs",
@@ -1292,10 +1292,10 @@
    "posted": "",
    "fit": "Remote clinical-affairs leadership at a virtual care and navigation company. Seen on Google Jobs ~29 days old.",
    "gap": "For-profit; scope not confirmed.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-10-27",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Not on the Included Health Lever board (current MD roles: Assoc Med Dir Behavioral Health, Maternal & Pediatric Health)."
   },
   {
    "id": "clarify-solutions-md",
@@ -1311,8 +1311,8 @@
    "gap": "For-profit; pay not listed.",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-10-27",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Aggregator (Powderkeg) still shows Apply; not confirmed on employer site."
   },
   {
    "id": "oscar-md-sci-affairs",
@@ -1326,10 +1326,10 @@
    "posted": "",
    "fit": "Clinical-affairs evidence role at a tech-first insurer.",
    "gap": "For-profit; payer.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-10-27",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: DailyRemote: \"This Job Has Expired.\""
   },
   {
    "id": "sharecare-md-pophealth",
@@ -1345,8 +1345,8 @@
    "gap": "For-profit; population-health focus.",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-10-27",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Aggregator still shows Apply; not confirmed on employer site."
   },
   {
    "id": "yo-ai-labs-physician-expert",
@@ -1360,10 +1360,10 @@
    "posted": "",
    "fit": "Evaluate AI-generated medical content and clinical cases. High hourly rate for side work.",
    "gap": "Contract; no benefits.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-10-27",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: LinkedIn: \"No longer accepting applications.\""
   },
   {
    "id": "kern-medical-kern-county-hospital-authority-faculty-medical-director-emergency-m",
@@ -1372,15 +1372,15 @@
    "location": "Bakersfield, CA",
    "employer_type": "public",
    "tier": "stretch",
-   "comp": "$350,000–$455,000 (per PracticeMatch listing)",
+   "comp": "$350,000–$455,000",
    "url": "https://www.practicematch.com/physicians/job-details.cfm/1050823",
    "posted": "2026-09-21",
    "fit": "Salaried EM faculty medical director at a public county teaching hospital with an EM residency, so PSLF holds and admin FTE is built in; salaried line, FTE negotiable toward informatics or quality. Means relocating to Bakersfield; listing seen on Kern's PracticeMatch employer page, job page itself not opened.",
    "gap": "role centers on running the simulation lab, which is not his background",
    "status": "open",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open on PracticeMatch (simulation lab faculty medical director, Bakersfield)."
   },
   {
    "id": "aptura-physician-clinical-ai-expert-remote-us",
@@ -1396,8 +1396,8 @@
    "gap": "pay not listed; short-term project",
    "status": "open",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open on Ashby."
   },
   {
    "id": "abridge-clinical-success-director",
@@ -1411,10 +1411,10 @@
    "posted": "2026-10-26",
    "fit": "Remote clinician lead for an ambient AI scribe vendor (clinician enablement, Epic documentation workflows, product feedback), matching his ambient scribe configuration and Epic build work.",
    "gap": "open to PA/NP with pay below physician level; for-profit ends PSLF",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-10-28",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Ashby returns \"Job not found\"."
   },
   {
    "id": "keck-school-of-medicine-of-usc-dept-of-emergency-medicine-usc-arcadia-hospital-c",
@@ -1440,15 +1440,15 @@
    "location": "Remote, US",
    "employer_type": "for-profit",
    "tier": "stretch",
-   "comp": "$250,000–$290,000 + 15% bonus + stock options",
+   "comp": "$250,000–$290,000 + 15% bonus",
    "url": "https://jobs.ashbyhq.com/wheel/8cabd472-8032-474b-bc04-02b460d0ef92",
    "posted": "2026-08-12",
    "fit": "Owns the protocols and clinical QA program for a virtual urgent and on-demand care network, using AI to scale QA and turning protocols into platform logic; EM boards are accepted and EHR/CDS comfort is a plus. Live on Wheel's board today; likely an immediate fill, not July 2027.",
    "gap": "wants prior team leadership in telehealth and virtual-care experience; for-profit ends PSLF",
    "status": "open",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-10-31",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open on Ashby."
   },
   {
    "id": "devoted-health-devoted-medical-medical-director-virtual-urgent-care-on-demand-te",
@@ -1499,8 +1499,8 @@
    "gap": "Wants a track record running an automation portfolio and measuring ROI. Pay tops out near $307K and offers are expected at or below midpoint, well under $350K, so pay is a gap to negotiate.",
    "status": "open",
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-05",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open on UCLA Health careers (Job #32680), $132,300–$307,100."
   },
   {
    "id": "us-acute-care-solutions-usacs-emergency-medicine-medical-director-providence-mis",
@@ -1514,10 +1514,10 @@
    "posted": "",
    "fit": "ED medical director at a Level II trauma center with about 73,000 visits a year in Orange County. It uses your throughput, boarding and ED quality work. Link not opened (the USACS page blocks bots); a job-board copy showed it posted about 4 days ago.",
    "gap": "For-profit, so it ends PSLF. It likely wants prior ED leadership and an immediate start, not July 2027.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-05",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: USACS posting returns 404."
   },
   {
    "id": "gramian-consulting-group-for-an-ai-client-emergency-medicine-physician-ai-clinic",
@@ -1531,10 +1531,10 @@
    "posted": "2026-10-31",
    "fit": "Remote 12-week EM contract writing gold-standard answers, long-chart cases and evaluation rubrics for clinical AI, which matches his LLM-evaluation and rubric work; 20-40 hrs/week.",
    "gap": "asks about 8+ years of EM practice; pay not posted",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-11-08",
-   "last_seen": "2026-11-08",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Workable returns Not Found."
   },
   {
    "id": "opentrain-ai-for-an-ai-client-emergency-medicine-physician-md-do-ai-evaluation",
@@ -1550,8 +1550,8 @@
    "gap": "pay and length not confirmed",
    "status": "open",
    "first_seen": "2026-11-08",
-   "last_seen": "2026-11-08",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open, posted Nov 13, 2026."
   },
   {
    "id": "unitedhealth-group-optum-sr-medical-director-of-clinical-ai-capability-developme",
@@ -1601,8 +1601,8 @@
    "gap": "FTE and pay not stated; looks shift-based with no admin time",
    "status": "open",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-11",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open on UCI careers."
   },
   {
    "id": "ucsf-dept-of-emergency-medicine-emergency-medicine-faculty-ultrasound-focused-jp",
@@ -1628,15 +1628,15 @@
    "location": "Remote (US)",
    "employer_type": "contract",
    "tier": "side",
-   "comp": "up to $180/hour",
+   "comp": "$180/hr",
    "url": "https://www.opentrain.ai/jobs/emergency-medicine-ai-evaluation-physician--cmw3tv4fw00i108lghgoughus/",
    "posted": "2026-11-05",
    "fit": "Remote part-time contract for US-licensed emergency physicians to evaluate clinical AI output, sized to fit around shifts; uses his LLM evaluation and rubric work. Separate posting from the OpenTrain EM role already tracked. Link not opened (host blocked in this run); search result shows it posted Nov 5, 2026.",
    "gap": "",
    "status": "open",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-14",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open."
   },
   {
    "id": "stanford-university-school-of-medicine-dept-of-emergency-medicine-clinical-assis",
