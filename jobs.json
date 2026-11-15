@@ -1207,10 +1207,10 @@
    "posted": "",
    "fit": "An EM-specific physician informatics leader role: Epic optimization, ED workflows, training. Useful as the model for a 0.25 FTE informatics carve-out.",
    "gap": "Requires concurrent EM practice at Sutter, Epic cert within 180 days, 8 years experience; NorCal.",
-   "status": "changed",
+   "status": "closed",
    "first_seen": "2026-10-27",
    "last_seen": "2026-11-15",
-   "note": "Chrome check 2026-11-15: Vaia aggregator page still loads (EM boards required, informatics leadership for the ED), but Sutter's own clinician careers site returns 0 results for \"informatics\". Likely filled; confirm with Sutter before applying."
+   "note": "Chrome check 2026-11-15: Not on Sutter's own job site (jobs.sutterhealth.org). Its 8 open informatics roles are Medical Director, Clinical Informatics for Medical Specialties, Behavioral Health and Surgical Specialties, plus an ACMIO (Sacramento/NorCal, 8+ yrs, $283,579–$453,723). No EM informatics director. The Vaia copy is stale."
   },
   {
    "id": "la-county-chief-physician",
