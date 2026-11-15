@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-11-14",
+  "date": "2026-11-15",
   "quiet": false,
   "new": 1,
   "updates": 0,
   "items": 1
  },
- "checked_at": "2026-11-15T03:10:25Z",
+ "checked_at": "2026-11-15T13:50:14Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -1636,6 +1636,23 @@
    "status": "open",
    "first_seen": "2026-11-14",
    "last_seen": "2026-11-14",
+   "note": ""
+  },
+  {
+   "id": "stanford-university-school-of-medicine-dept-of-emergency-medicine-clinical-assis",
+   "title": "Clinical Assistant/Associate/Full Professor of Emergency Medicine (Clinician Educator Line, full-time)",
+   "employer": "Stanford University School of Medicine, Dept. of Emergency Medicine",
+   "location": "Stanford / Palo Alto, onsite",
+   "employer_type": "nonprofit",
+   "tier": "pursue",
+   "comp": "Base $300K-$330K (Asst), $340K-$360K (Assoc), $370K-$390K (Prof), plus incentive pay",
+   "url": "https://facultypositions.stanford.edu/en-us/job/494676/clinical-assistant-professor-clinical-associate-professor-or-clinical-professor-of-emergency-medicine",
+   "posted": "2023-12-04 (rolling, no closing date; live 2026-11-15)",
+   "fit": "Salaried line, FTE negotiable: a rolling full-time EM faculty ad that asks for health innovation and IT experience, at an institution with a CMIO office and a clinical informatics fellowship. It means relocating or commuting to the Bay Area.",
+   "gap": "Outside the three counties; Assistant-rank base is below $350K before incentives",
+   "status": "open",
+   "first_seen": "2026-11-15",
+   "last_seen": "2026-11-15",
    "note": ""
   }
  ]
