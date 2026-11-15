@@ -7,7 +7,7 @@
   "updates": 0,
   "items": 1
  },
- "checked_at": "2026-11-15T13:50:14Z",
+ "checked_at": "2026-11-15T23:20:00Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -23,8 +23,8 @@
    "gap": "The ad lists no informatics duties. The AI medical director share has to be funded by the health system and negotiated separately. UC's compensation plan limits outside clinical work (UCSD's EM ad says moonlighting is barred), so check what UCI would allow for your S-corp shifts.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Opened Aug 21, 2026. Final date Jun 30, 2027. Checked today.",
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open. Final date Jun 30, 2027. $315,964–$406,183.",
    "seeded": true
   },
   {
@@ -60,8 +60,8 @@
    "gap": "A C-suite title for a new graduate, being filled now. Reports to the Chief Technology Product Officer.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "No posted date. Apply button live. Checked today.",
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open with Apply button; $145.00–$210.99/hr; no date shown.",
    "seeded": true
   },
   {
@@ -135,7 +135,7 @@
    "gap": "For-profit. Wants a data-science and database background, and prefers urgent care, primary care or IM.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
+   "last_seen": "2026-11-15",
    "note": "Published Jan 14, 2026 and still listed. Checked today.",
    "seeded": true
   },
@@ -153,7 +153,7 @@
    "gap": "Asks for 5+ years of clinical practice; you'd be borderline. About 20% travel. For-profit.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
+   "last_seen": "2026-11-15",
    "note": "Reposted about Oct 8, 2026 at Principal level. Checked today; listed as expiring Nov 17, 2026.",
    "seeded": true
   },
@@ -171,7 +171,7 @@
    "gap": "For-profit. The posting leans toward functional or preventive medicine expertise.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
+   "last_seen": "2026-11-15",
    "note": "Reposted about Oct 17, 2026 after being taken down Oct 8. Over 100 people have clicked apply. Checked on LinkedIn today.",
    "seeded": true
   },
@@ -189,7 +189,7 @@
    "gap": "About 80% travel and US citizenship with a security clearance. Prefers 10+ years total and Oracle (Cerner) experience. For-profit.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
+   "last_seen": "2026-11-15",
    "note": "Reposted about Oct 14, 2026. Checked on LinkedIn today.",
    "seeded": true
   },
@@ -226,7 +226,7 @@
    "gap": "Requires hands-on production LLM building and owning shipped products. Your UCI platform should count, so be ready to show it. For-profit.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
+   "last_seen": "2026-11-15",
    "note": "Now on Counsel's own job board; updated about Oct 8, 2026.",
    "seeded": true
   },
@@ -244,7 +244,7 @@
    "gap": "The work is mostly interoperability and data modeling, less evaluation. For-profit.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
+   "last_seen": "2026-11-15",
    "note": "Updated Jan 29, 2026. Apply live. Checked today.",
    "seeded": true
   },
@@ -262,7 +262,7 @@
    "gap": "Requires leading an independent research program. No ED clinical role is stated.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
+   "last_seen": "2026-11-15",
    "note": "Posted Feb 20, 2026. Apply live.",
    "seeded": true
   },
@@ -273,15 +273,15 @@
    "location": "Downey, Woodland Hills, OC, South Bay, Panorama City, San Diego and others",
    "employer_type": "unknown",
    "tier": "fallback",
-   "comp": "$362,375–$461,055 FT + up to $59,556 premium · sign-on up to $75K · per diem up to $240/hr",
+   "comp": "FT $362,375–$461,055 (+ up to $59,556 premium); per diem/virtual up to $240/hr",
    "url": "https://careers.saem.org/job/emergency-medicine-physicians/82066182/",
    "posted": "",
    "fit": "The highest clinical pay found, and it gets you inside Kaiser. A 100% virtual EM role at $140/hr was also posted Oct 8.",
    "gap": "No informatics time.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Standing recruitment. SCPMG's own job portal showed about 20 EM openings on Oct 21, including Orange County, Los Angeles, West LA, Downey, Panorama City, Woodland Hills, Baldwin Park, San Diego and a South Bay nocturnist slot.",
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: SAEM listing posted 4 days ago. Up to $75K sign-on; ad states PSLF eligible.",
    "seeded": true
   },
   {
@@ -315,10 +315,10 @@
    "posted": "",
    "fit": "An inside seat at the organization that runs RUAIH certification. The 0.48 FTE option fits around EM shifts.",
    "gap": "Requires 2 years of leadership or management and CPHQ by the end of 2028. Low pay and heavy travel.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Posted Aug 8, 2026. Updated Aug 26. Six openings, hired in recurring orientation classes. Checked today.",
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Joint Commission req 7093 returns \"job could not be found\"; TJC careers search shows no Hospital MD surveyor openings.",
    "seeded": true
   },
   {
@@ -348,14 +348,14 @@
    "employer_type": "nonprofit",
    "tier": "fallback",
    "comp": "$325K–$380K total",
-   "url": "https://careercenter.asnc.org/job/physician-advisorum-medical-director/85641338/",
+   "url": "https://jobs.psdconnect.org/profession/medical-director/jobs/",
    "posted": "",
    "fit": "The top of the physician-advisor pay range found. Overlaps your patient-status, documentation and billing work.",
    "gap": "Requires 3+ years of medical group management. Not informatics.",
-   "status": "open",
+   "status": "changed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "No posted date. As of Oct 21 neither role shows on Providence's own job site, so they may be filled.",
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Old ASNC links redirect to a search page. Providence now lists Physician Advisor/UM Medical Director jobs (Torrance, Burbank, Mission Hills, Tarzana) on its physician recruiting site; the Torrance req requires 3+ years of medical group management experience.",
    "seeded": true
   },
   {
@@ -372,7 +372,7 @@
    "gap": "64 hours a month, clinical only.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
+   "last_seen": "2026-11-15",
    "note": "Live on UCI's job portal. Checked today.",
    "seeded": true
   },
@@ -390,7 +390,7 @@
    "gap": "Part-time; ad is clinical and teaching only, so any carve-out must be negotiated.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-26",
+   "last_seen": "2026-11-15",
    "note": "Posted Jun 17, 2026. Apply live as of today.",
    "seeded": true
   },
@@ -408,7 +408,7 @@
    "gap": "For-profit partnership, so PSLF would stop. No informatics.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
+   "last_seen": "2026-11-15",
    "note": "Lakewood listing on PracticeMatch, undated. Fellowship page is live with no 2027 cohort dates yet.",
    "seeded": true
   },
@@ -426,7 +426,7 @@
    "gap": "Pay isn't posted. Board certification required.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
+   "last_seen": "2026-11-15",
    "note": "Updated Oct 6, 2026. Apply live, reviewed on a rolling basis. Checked today.",
    "seeded": true
   },
@@ -461,10 +461,10 @@
    "posted": "",
    "fit": "The best-paying EM-specific evaluation work found: writing EM scenarios and grading model reasoning.",
    "gap": "20–40 hours a week, with at least 4 hours a day overlapping Pacific time. Too heavy during fellowship except in a vacation block.",
-   "status": "changed",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-12",
-   "note": "Checked 2026-11-12: both earlier Turing links now say 'This job is now closed'; the same remote EM LLM-training role ($200-300/hr) was reposted Nov 11 at turing.betterteam.com/remote-physician-emergency-medicine-44",
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: \"This job is now closed.\"",
    "seeded": true,
    "status_date": "2026-11-12"
   },
@@ -501,7 +501,7 @@
    "gap": "Project by project, with no guaranteed hours.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
+   "last_seen": "2026-11-15",
    "note": "Pool listing posted about a month ago.",
    "seeded": true
   },
@@ -517,10 +517,10 @@
    "posted": "",
    "fit": "Flexible hours.",
    "gap": "Focused on general medicine, and uses little of your evaluation-design skill.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Posted Oct 9, 2026.",
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Workable posting returns Not Found.",
    "seeded": true
   },
   {
@@ -590,10 +590,10 @@
    "posted": "",
    "fit": "A full ED operations leadership role in LA.",
    "gap": "Requires prior medical director experience. For-profit group.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Live on the USACS site, undated.",
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: USACS posting returns 404.",
    "seeded": true
   },
   {
@@ -608,10 +608,10 @@
    "posted": "",
    "fit": "County medical director roster with high public-sector pay.",
    "gap": "Requires 2 years of medical administrative experience.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Continuous posting open since Aug 2023.",
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: USNLX copy says \"MEDICAL DIRECTOR I has expired\" (404); no Medical Director I/II on the LA County board.",
    "seeded": true
   },
   {
@@ -901,8 +901,8 @@
    "gap": "60%+ clinical at a community clinic, likely needs primary-care boards",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: UCLA Health posting #31708 requires board certification in FM, IM or Med-Peds plus primary care leadership, so an EM physician is not eligible."
   },
   {
    "id": "cvs-health-aetna-senior-medical-director-digital-innovation",
@@ -935,7 +935,7 @@
    "gap": "wants longitudinal primary-care experience, physician-management experience and 10+ state licenses; ~30% async primary care; ends PSLF",
    "status": "open",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-10-23",
+   "last_seen": "2026-11-15",
    "note": ""
   },
   {
@@ -952,7 +952,7 @@
    "gap": "Asks for 5+ years post-residency and experience supervising virtual care at scale; for-profit; likely filled before July 2027.",
    "status": "open",
    "first_seen": "2026-10-24",
-   "last_seen": "2026-10-24",
+   "last_seen": "2026-11-15",
    "note": ""
   },
   {
@@ -1053,10 +1053,10 @@
    "posted": "2026-09-01",
    "fit": "Salaried line, FTE negotiable: full-time county faculty with a UCLA academic appointment that already includes departmental administration time, at a Level 1 safety-net ED in LA County. PSLF holds.",
    "gap": "Status unclear: county listing posted Sep 1 (listed valid to Nov 30) but the SAEM copy shows expired on 2026-10-26; confirm with Harbor-UCLA DEM. Nights may be required.",
-   "status": "open",
+   "status": "changed",
    "first_seen": "2026-10-26",
-   "last_seen": "2026-10-26",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Vaia page still loads with Apply, no date. Not listed on the LA DHS physician board (ladhsphysicianjobs.com shows no EM jobs countywide), so likely a stale aggregator copy. Apply directly through the department (Chair Craig Goolsby, cgoolsby@dhs.lacounty.gov)."
   },
   {
    "id": "uc-davis-health-dept-of-emergency-medicine-emergency-medicine-assistant-associat",
@@ -1089,7 +1089,7 @@
    "gap": "prefers 3+ years experience or fellowship/advanced degree; relocation",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-10-27",
+   "last_seen": "2026-11-15",
    "note": ""
   },
   {
@@ -1099,15 +1099,15 @@
    "location": "Palo Alto, CA",
    "employer_type": "nonprofit",
    "tier": "stretch",
-   "comp": "$328,000-$364,000 base at Clinical Assistant Professor (aggregator, unverified)",
-   "url": "https://www.salarydr.com/jobs/emergency-medicine-stanford-california-b2bd2728",
+   "comp": "$328,000–$420,000 by rank",
+   "url": "https://facultypositions.stanford.edu/jobs/medical-director-adult-emergency-department-stanford-university-california-united-states",
    "posted": "",
    "fit": "Academic ED medical director role for a 66-bed ED; the ad favors ED operations, patient flow and throughput plus clinical informatics and digital health, which matches his ops and informatics work. Nonprofit keeps PSLF; means relocating. Seen about 17 days old on an aggregator; link not opened.",
    "gap": "likely expects prior ED leadership; probably an immediate fill",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-10-27",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open on Stanford faculty site. Clin Asst Prof $328–364K, Assoc $375–393K, Prof $405–420K."
   },
   {
    "id": "ucsf-docit-jpf05972",
@@ -1116,15 +1116,15 @@
    "location": "San Francisco (relocation)",
    "employer_type": "public",
    "tier": "stretch",
-   "comp": "$114,100–$344,400 minimum base plus health sciences comp plan",
+   "comp": "$114,100–$344,400 base + HSCP",
    "url": "https://aprecruit.ucsf.edu/JPF05972",
    "posted": "2026-02-20",
    "fit": "New UCSF informatics division under Julia Adler-Milstein; research areas include applying LLMs to real-world care, and it houses UCSF’s CI fellowship. Clinician-scientists can keep clinical time (ZSFG and VA possible). Next review Nov 20, 2026, final date Aug 20, 2027, which fits a July 2027 start. Verified on UCSF Recruit 2026-10-27.",
    "gap": "Research-focused (grant funding and publications expected); non-EM onsite role outside the three counties.",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-10-27",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open. Next review date Nov 20, 2026; final date Aug 20, 2027. Research-focused (AI/LLMs in real-world care, value, diagnostic excellence). Needs CV, research and teaching statements, 3–5 references."
   },
   {
    "id": "sfva-ucsf-ed-jpf06088",
@@ -1140,7 +1140,7 @@
    "gap": "Relocation; variable shifts incl. nights and weekends.",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-10-27",
+   "last_seen": "2026-11-15",
    "note": ""
   },
   {
@@ -1220,14 +1220,14 @@
    "employer_type": "public",
    "tier": "watch",
    "comp": "$240,684–$768,792",
-   "url": "https://www.careersingovernment.com/job/2591431/chief-physician-ii/",
+   "url": "https://www.governmentjobs.com/careers/lacounty/jobs/2914957/chief-physician-i-various-specialties",
    "posted": "",
    "fit": "The county civil-service class used to hire attending and faculty physicians at Harbor-UCLA, Olive View and LAC+USC; filing keeps you eligible for those EM lines. PSLF-eligible.",
    "gap": "Generic exam, not a specific EM vacancy.",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-10-27",
-   "note": ""
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open continuous on governmentjobs.com: Chief Physician I $240,684–$748,248 (job 2914957), Chief Physician II $247,320–$768,792 (2915002). Physician Specialist (2914495), Senior Physician (2914624) and Relief Physician (2914571) lists also open. These are the lists Harbor hires from."
   },
   {
    "id": "uci-son-ai-jpf10380",
@@ -1243,7 +1243,7 @@
    "gap": "Requires PhD-level research record, sustained federal funding and graduate teaching.",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-10-27",
+   "last_seen": "2026-11-15",
    "note": ""
   },
   {
@@ -1430,7 +1430,7 @@
    "gap": "part-time clinical ad with no stated admin time; long-open posting may be filled at any time",
    "status": "open",
    "first_seen": "2026-10-29",
-   "last_seen": "2026-10-29",
+   "last_seen": "2026-11-15",
    "note": ""
   },
   {
@@ -1482,7 +1482,7 @@
    "gap": "UML line expects scholarship; precision-EM research focus favored",
    "status": "open",
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-04",
+   "last_seen": "2026-11-15",
    "note": ""
   },
   {
@@ -1567,7 +1567,7 @@
    "gap": "requires a master's in statistics, epidemiology or health services research plus 3+ years of health-plan/QI and team-lead experience; for-profit ends PSLF",
    "status": "open",
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-10",
+   "last_seen": "2026-11-15",
    "note": ""
   },
   {
@@ -1584,7 +1584,7 @@
    "gap": "Per diem, so no FTE to negotiate; immediate fill",
    "status": "open",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-11",
+   "last_seen": "2026-11-15",
    "note": ""
   },
   {
@@ -1618,7 +1618,7 @@
    "gap": "Wants ultrasound fellowship training, which he lacks; final date Aug 5, 2027",
    "status": "open",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-11",
+   "last_seen": "2026-11-15",
    "note": ""
   },
   {
@@ -1654,6 +1654,23 @@
    "first_seen": "2026-11-15",
    "last_seen": "2026-11-15",
    "note": ""
+  },
+  {
+   "id": "ucsf-health-chaio",
+   "title": "VP / Chief Health AI Officer (CHAIO)",
+   "employer": "UCSF Health",
+   "location": "San Francisco",
+   "employer_type": "public",
+   "tier": "watch",
+   "comp": "",
+   "url": "https://careers.ucsf.edu/careers/JobDetail/San-Francisco-CA-United-States/3690",
+   "posted": "",
+   "fit": "Health-system AI executive role at UCSF.",
+   "gap": "Requires 8+ years of physician leadership in clinical AI/informatics and 5 years as a CMIO-level executive; far above the bar for a 2027 graduate. Useful as a contact once filled.",
+   "status": "open",
+   "first_seen": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "note": "Chrome check 2026-11-15: Open on UCSF careers site."
   }
  ]
 }
