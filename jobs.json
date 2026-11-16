@@ -7,7 +7,7 @@
   "updates": 0,
   "items": 1
  },
- "checked_at": "2026-11-15T23:55:00Z",
+ "checked_at": "2026-11-15T23:00:00Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -1671,6 +1671,24 @@
    "first_seen": "2026-11-15",
    "last_seen": "2026-11-15",
    "note": "Chrome check 2026-11-15: Open on UCSF careers site."
+  },
+  {
+   "id": "dha-nmcsd-em-891056300",
+   "title": "Physician (Emergency Medicine)",
+   "employer": "Defense Health Agency — Naval Medical Center San Diego",
+   "location": "San Diego, CA (onsite)",
+   "employer_type": "public",
+   "tier": "fallback",
+   "comp": "$200,000–$400,000",
+   "url": "https://www.usajobs.gov/job/891056300",
+   "posted": "2026-11-03",
+   "fit": "Federal civilian EM attending in SoCal; direct hire; PSLF-qualifying.",
+   "gap": "Pure clinical, no informatics component; announcement closes 12/04/2026, far ahead of a July 2027 start — watch for a repost in spring 2027.",
+   "status": "open",
+   "first_seen": "2026-11-15",
+   "last_seen": "2026-11-15",
+   "note": "Verified on USAJobs 2026-11-15: open 11/03/2026–12/04/2026, direct hire. Federal employer, PSLF yes.",
+   "seeded": false
   }
  ]
 }
