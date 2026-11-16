@@ -7,7 +7,7 @@
   "updates": 0,
   "items": 1
  },
- "checked_at": "2026-11-16T00:05:45Z",
+ "checked_at": "2026-11-16T01:05:00Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -146,15 +146,15 @@
    "location": "Remote, or hybrid from a WK office (Torrance is one)",
    "employer_type": "for-profit",
    "tier": "stretch",
-   "comp": "$173.5K–$310K + bonus",
-   "url": "https://dejobs.org/annapolis-md/principal-clinical-content-physician-clinical-ai-strategist-uptodate-partnerships/F3496B38609E4B2E87D30EA139C9A1C7/job/",
+   "comp": "$173,500–$310,000 + bonus",
+   "url": "https://wk.wd3.myworkdayjobs.com/en-US/External/job/USA---Waltham-MA/Principal-Clinical-Content--Physician--Clinical-AI-Strategist---UpToDate-----Partnerships_R0059713",
    "posted": "",
    "fit": "Clinical test sets, benchmarks, safety evaluation and expert testing for UpToDate's AI, plus outcomes studies with partner health systems. Up to 20% clinical time is allowed.",
    "gap": "Asks for 5+ years of clinical practice; you'd be borderline. About 20% travel. For-profit.",
    "status": "open",
    "first_seen": "2026-10-21",
    "last_seen": "2026-11-15",
-   "note": "Reposted about Oct 8, 2026 at Principal level. Checked today; listed as expiring Nov 17, 2026.",
+   "note": "Verified on Wolters Kluwer Workday (R0059713) 2026-11-15: open, Apply live, posted 30+ days ago, no end date shown. Remote/hybrid; Torrance office qualifies for hybrid.",
    "seeded": true
   },
   {
@@ -274,14 +274,14 @@
    "employer_type": "unknown",
    "tier": "fallback",
    "comp": "FT $362,375–$461,055 (+ up to $59,556 premium); per diem/virtual up to $240/hr",
-   "url": "https://careers.saem.org/job/emergency-medicine-physicians/82066182/",
+   "url": "https://southerncalifornia.permanente.org/jobs",
    "posted": "",
    "fit": "The highest clinical pay found, and it gets you inside Kaiser. A 100% virtual EM role at $140/hr was also posted Oct 8.",
    "gap": "No informatics time.",
    "status": "open",
    "first_seen": "2026-10-21",
    "last_seen": "2026-11-15",
-   "note": "Chrome check 2026-11-15: SAEM listing posted 4 days ago. Up to $75K sign-on; ad states PSLF eligible.",
+   "note": "Apply via SCPMG site (filter Emergency Medicine – [site]). FT range $362,375–$461,055, up to $75K sign-on, PSLF eligible per ad. Checked 2026-11-15.",
    "seeded": true
   },
   {
@@ -1053,10 +1053,10 @@
    "posted": "2026-09-01",
    "fit": "Salaried line, FTE negotiable: full-time county faculty with a UCLA academic appointment that already includes departmental administration time, at a Level 1 safety-net ED in LA County. PSLF holds.",
    "gap": "Status unclear: county listing posted Sep 1 (listed valid to Nov 30) but the SAEM copy shows expired on 2026-10-26; confirm with Harbor-UCLA DEM. Nights may be required.",
-   "status": "changed",
+   "status": "closed",
    "first_seen": "2026-10-26",
    "last_seen": "2026-11-15",
-   "note": "Chrome check 2026-11-15: Vaia page still loads with Apply, no date. Not listed on the LA DHS physician board (ladhsphysicianjobs.com shows no EM jobs countywide), so likely a stale aggregator copy. Apply directly through the department (Chair Craig Goolsby, cgoolsby@dhs.lacounty.gov)."
+   "note": "2026-11-15: no longer on LA County governmentjobs board; likely filled. Chrome check 2026-11-15: Vaia page still loads with Apply, no date. Not listed on the LA DHS physician board (ladhsphysicianjobs.com shows no EM jobs countywide), so likely a stale aggregator copy. Apply directly through the department (Chair Craig Goolsby, cgoolsby@dhs.lacounty.gov)."
   },
   {
    "id": "uc-davis-health-dept-of-emergency-medicine-emergency-medicine-assistant-associat",
@@ -1476,7 +1476,7 @@
    "employer_type": "nonprofit",
    "tier": "pursue",
    "comp": "",
-   "url": "https://facultypositions.stanford.edu/en-us/job/493475/academic-emergency-medicine-faculty",
+   "url": "https://facultypositions.stanford.edu/jobs/academic-emergency-medicine-faculty-stanford-university-california-united-states",
    "posted": "",
    "fit": "Salaried academic EM line at a department with a strong informatics and digital-health ecosystem, so protected clinical-AI or informatics FTE is negotiable at offer; means relocating to the Bay Area. Link not opened (host blocked); found live on Stanford EM careers page via search, posting date not shown.",
    "gap": "UML line expects scholarship; precision-EM research focus favored",
