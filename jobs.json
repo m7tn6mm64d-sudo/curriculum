@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-11-17",
-  "quiet": true,
+  "date": "2026-11-18",
+  "quiet": false,
   "new": 0,
-  "updates": 0,
-  "items": 0
+  "updates": 1,
+  "items": 1
  },
- "checked_at": "2026-11-18T04:44:25Z",
+ "checked_at": "2026-11-18T13:46:31Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -187,11 +187,12 @@
    "posted": "",
    "fit": "Federal and commercial Oracle Health EHR deployments, including VA work. Your VA Long Beach shifts give you a view of the VA Oracle rollout.",
    "gap": "About 80% travel and US citizenship with a security clearance. Prefers 10+ years total and Oracle (Cerner) experience. For-profit.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-15",
-   "note": "Reposted about Oct 14, 2026. Checked on LinkedIn today.",
-   "seeded": true
+   "last_seen": "2026-11-18",
+   "note": "LinkedIn posting says no longer accepting applications (checked 2026-11-18)",
+   "seeded": true,
+   "status_date": "2026-11-18"
   },
   {
    "id": "ucsd-acmo",
