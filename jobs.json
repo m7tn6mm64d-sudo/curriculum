@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-11-21",
-  "quiet": true,
-  "new": 0,
+  "date": "2026-11-22",
+  "quiet": false,
+  "new": 1,
   "updates": 0,
-  "items": 0
+  "items": 1
  },
- "checked_at": "2026-11-22T03:31:41Z",
+ "checked_at": "2026-11-22T13:47:28Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -1690,6 +1690,23 @@
    "last_seen": "2026-11-15",
    "note": "Verified on USAJobs 2026-11-15: open 11/03/2026–12/04/2026, direct hire. Federal employer, PSLF yes.",
    "seeded": false
+  },
+  {
+   "id": "turing-medicine-physician-ai-evaluation-part-time-contract",
+   "title": "Medicine Physician (AI evaluation, part-time contract)",
+   "employer": "Turing",
+   "location": "Remote, US",
+   "employer_type": "contract",
+   "tier": "side",
+   "comp": "",
+   "url": "https://work.turing.com/r/LbrvDlsZwa",
+   "posted": "",
+   "fit": "Remote, flexible contract evaluating how AI handles clinical reasoning and writing medical test scenarios; open to licensed physicians in any specialty, so EM qualifies. Replaces the closed Turing EM listing.",
+   "gap": "Pay and posting date not listed; up to 30 hrs/week, 1-month initial term.",
+   "status": "open",
+   "first_seen": "2026-11-22",
+   "last_seen": "2026-11-22",
+   "note": ""
   }
  ]
 }
