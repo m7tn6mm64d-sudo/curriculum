@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-11-22",
-  "quiet": false,
-  "new": 1,
+  "date": "2026-11-23",
+  "quiet": true,
+  "new": 0,
   "updates": 0,
-  "items": 1
+  "items": 0
  },
- "checked_at": "2026-11-23T04:04:34Z",
+ "checked_at": "2026-11-23T13:47:58Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
