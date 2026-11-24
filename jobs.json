@@ -7,7 +7,7 @@
   "updates": 0,
   "items": 0
  },
- "checked_at": "2026-11-24T13:49:23Z",
+ "checked_at": "2026-11-24T17:45:00Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -23,7 +23,7 @@
    "gap": "The ad lists no informatics duties. The AI medical director share has to be funded by the health system and negotiated separately. UC's compensation plan limits outside clinical work (UCSD's EM ad says moonlighting is barred), so check what UCI would allow for your S-corp shifts.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: Open. Final date Jun 30, 2027. $315,964–$406,183.",
    "seeded": true
   },
@@ -60,7 +60,7 @@
    "gap": "A C-suite title for a new graduate, being filled now. Reports to the Chief Technology Product Officer.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: Open with Apply button; $145.00–$210.99/hr; no date shown.",
    "seeded": true
   },
@@ -135,7 +135,7 @@
    "gap": "For-profit. Wants a data-science and database background, and prefers urgent care, primary care or IM.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Published Jan 14, 2026 and still listed. Checked today.",
    "seeded": true
   },
@@ -153,8 +153,8 @@
    "gap": "Asks for 5+ years of clinical practice; you'd be borderline. About 20% travel. For-profit.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-15",
-   "note": "Verified on Wolters Kluwer Workday (R0059713) 2026-11-15: open, Apply live, posted 30+ days ago, no end date shown. Remote/hybrid; Torrance office qualifies for hybrid.",
+   "last_seen": "2026-11-24",
+   "note": "Chrome check 2026-11-24: Open on WK Workday (R0059713); page shows \"Posted 5 days ago\" (reposted ~Nov 19), no end date. Verified on Wolters Kluwer Workday (R0059713) 2026-11-15: open, Apply live, posted 30+ days ago, no end date shown. Remote/hybrid; Torrance office qualifies for hybrid.",
    "seeded": true
   },
   {
@@ -171,7 +171,7 @@
    "gap": "For-profit. The posting leans toward functional or preventive medicine expertise.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Reposted about Oct 17, 2026 after being taken down Oct 8. Over 100 people have clicked apply. Checked on LinkedIn today.",
    "seeded": true
   },
@@ -227,7 +227,7 @@
    "gap": "Requires hands-on production LLM building and owning shipped products. Your UCI platform should count, so be ready to show it. For-profit.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Now on Counsel's own job board; updated about Oct 8, 2026.",
    "seeded": true
   },
@@ -245,7 +245,7 @@
    "gap": "The work is mostly interoperability and data modeling, less evaluation. For-profit.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Updated Jan 29, 2026. Apply live. Checked today.",
    "seeded": true
   },
@@ -263,7 +263,7 @@
    "gap": "Requires leading an independent research program. No ED clinical role is stated.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Posted Feb 20, 2026. Apply live.",
    "seeded": true
   },
@@ -281,8 +281,8 @@
    "gap": "No informatics time.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-15",
-   "note": "Apply via SCPMG site (filter Emergency Medicine – [site]). FT range $362,375–$461,055, up to $75K sign-on, PSLF eligible per ad. Checked 2026-11-15.",
+   "last_seen": "2026-11-24",
+   "note": "Chrome check 2026-11-24: SCPMG site lists 20 Emergency Medicine openings (Specialty filter). Apply via SCPMG site (filter Emergency Medicine – [site]). FT range $362,375–$461,055, up to $75K sign-on, PSLF eligible per ad. Checked 2026-11-15.",
    "seeded": true
   },
   {
@@ -355,8 +355,8 @@
    "gap": "Requires 3+ years of medical group management. Not informatics.",
    "status": "changed",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-15",
-   "note": "Chrome check 2026-11-15: Old ASNC links redirect to a search page. Providence now lists Physician Advisor/UM Medical Director jobs (Torrance, Burbank, Mission Hills, Tarzana) on its physician recruiting site; the Torrance req requires 3+ years of medical group management experience.",
+   "last_seen": "2026-11-24",
+   "note": "Chrome check 2026-11-24: PSD board now shows Physician Advisor/UM Medical Director at Providence St. Joseph (Burbank). Chrome check 2026-11-15: Old ASNC links redirect to a search page. Providence now lists Physician Advisor/UM Medical Director jobs (Torrance, Burbank, Mission Hills, Tarzana) on its physician recruiting site; the Torrance req requires 3+ years of medical group management experience.",
    "seeded": true
   },
   {
@@ -373,7 +373,7 @@
    "gap": "64 hours a month, clinical only.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Live on UCI's job portal. Checked today.",
    "seeded": true
   },
@@ -391,7 +391,7 @@
    "gap": "Part-time; ad is clinical and teaching only, so any carve-out must be negotiated.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Posted Jun 17, 2026. Apply live as of today.",
    "seeded": true
   },
@@ -409,7 +409,7 @@
    "gap": "For-profit partnership, so PSLF would stop. No informatics.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Lakewood listing on PracticeMatch, undated. Fellowship page is live with no 2027 cohort dates yet.",
    "seeded": true
   },
@@ -427,7 +427,7 @@
    "gap": "Pay isn't posted. Board certification required.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Updated Oct 6, 2026. Apply live, reviewed on a rolling basis. Checked today.",
    "seeded": true
   },
@@ -502,7 +502,7 @@
    "gap": "Project by project, with no guaranteed hours.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Pool listing posted about a month ago.",
    "seeded": true
   },
@@ -575,8 +575,8 @@
    "gap": "Junior rank; you'd be overqualified as a trainee.",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-10-21",
-   "note": "Last year's ad (JPF09853) ran Sep 2025 to Apr 2026. The 2027–28 ad hasn't posted yet.",
+   "last_seen": "2026-11-24",
+   "note": "Chrome check 2026-11-24: 2027-28 EM administration fellowship not yet posted on UCI Recruit. Last year's ad (JPF09853) ran Sep 2025 to Apr 2026. The 2027–28 ad hasn't posted yet.",
    "seeded": true
   },
   {
@@ -902,7 +902,7 @@
    "gap": "60%+ clinical at a community clinic, likely needs primary-care boards",
    "status": "open",
    "first_seen": "2026-10-21",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: UCLA Health posting #31708 requires board certification in FM, IM or Med-Peds plus primary care leadership, so an EM physician is not eligible."
   },
   {
@@ -936,7 +936,7 @@
    "gap": "wants longitudinal primary-care experience, physician-management experience and 10+ state licenses; ~30% async primary care; ends PSLF",
    "status": "open",
    "first_seen": "2026-10-23",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": ""
   },
   {
@@ -953,7 +953,7 @@
    "gap": "Asks for 5+ years post-residency and experience supervising virtual care at scale; for-profit; likely filled before July 2027.",
    "status": "open",
    "first_seen": "2026-10-24",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": ""
   },
   {
@@ -970,7 +970,7 @@
    "gap": "6-week project at 20+ hrs/week; prefers 3+ years post-residency.",
    "status": "open",
    "first_seen": "2026-10-24",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: Open on Mercor ($150/hr shown)."
   },
   {
@@ -1005,7 +1005,7 @@
    "gap": "for-profit (ends PSLF), 5-10 yrs experience, 25-50% clinical in a primary-care-heavy clinic",
    "status": "open",
    "first_seen": "2026-10-26",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: Open on the K Health Greenhouse board (remote)."
   },
   {
@@ -1022,7 +1022,7 @@
    "gap": "Bay Area relocation; hourly rate below SoCal academic pay; ad is clinical only.",
    "status": "open",
    "first_seen": "2026-10-26",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: 0.8 FTE req open, posted Oct 12, 2026."
   },
   {
@@ -1039,7 +1039,7 @@
    "gap": "Per diem (FTE 0.01); Bay Area.",
    "status": "open",
    "first_seen": "2026-10-26",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: Open, posted Aug 13, 2026."
   },
   {
@@ -1073,7 +1073,7 @@
    "gap": "relocation; first review date (Oct 1) has passed",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: Open. Final date Jun 30, 2027 (review date was Oct 1, 2026)."
   },
   {
@@ -1090,8 +1090,8 @@
    "gap": "prefers 3+ years experience or fellowship/advanced degree; relocation",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-15",
-   "note": ""
+   "last_seen": "2026-11-24",
+   "note": "Chrome check 2026-11-24: Open. Next review Dec 1, 2026; final Mar 21, 2028."
   },
   {
    "id": "stanford-university-school-of-medicine-dept-of-emergency-medicine-medical-direct",
@@ -1107,8 +1107,8 @@
    "gap": "likely expects prior ED leadership; probably an immediate fill",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-15",
-   "note": "Chrome check 2026-11-15: Open on Stanford faculty site. Clin Asst Prof $328–364K, Assoc $375–393K, Prof $405–420K."
+   "last_seen": "2026-11-24",
+   "note": "Chrome check 2026-11-24: Open; posting runs Sep 23, 2026 to Sep 22, 2027. Chrome check 2026-11-15: Open on Stanford faculty site. Clin Asst Prof $328–364K, Assoc $375–393K, Prof $405–420K."
   },
   {
    "id": "ucsf-docit-jpf05972",
@@ -1124,8 +1124,8 @@
    "gap": "Research-focused (grant funding and publications expected); non-EM onsite role outside the three counties.",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-15",
-   "note": "Chrome check 2026-11-15: Open. Next review date Nov 20, 2026; final date Aug 20, 2027. Research-focused (AI/LLMs in real-world care, value, diagnostic excellence). Needs CV, research and teaching statements, 3–5 references."
+   "last_seen": "2026-11-24",
+   "note": "Chrome check 2026-11-24: Open. Nov 20 review passed; final date Aug 20, 2027. Chrome check 2026-11-15: Open. Next review date Nov 20, 2026; final date Aug 20, 2027. Research-focused (AI/LLMs in real-world care, value, diagnostic excellence). Needs CV, research and teaching statements, 3–5 references."
   },
   {
    "id": "sfva-ucsf-ed-jpf06088",
@@ -1141,7 +1141,7 @@
    "gap": "Relocation; variable shifts incl. nights and weekends.",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": ""
   },
   {
@@ -1158,8 +1158,8 @@
    "gap": "Relocation to Fresno; employer is the faculty medical group, so PSLF status unconfirmed.",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-15",
-   "note": "Chrome check 2026-11-15: Open. Review date Nov 15, 2026; final date Dec 30, 2026.",
+   "last_seen": "2026-11-24",
+   "note": "Chrome check 2026-11-24: Open. Next review Nov 30, 2026; final Dec 30, 2026. Chrome check 2026-11-15: Open. Review date Nov 15, 2026; final date Dec 30, 2026.",
    "status_date": "2026-11-06"
   },
   {
@@ -1176,8 +1176,8 @@
    "gap": "Research series expects funding and publications; relocation.",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-15",
-   "note": "Chrome check 2026-11-15: Open. Next review date Dec 1, 2026; final date Jun 30, 2027."
+   "last_seen": "2026-11-24",
+   "note": "Chrome check 2026-11-24: Open. Next review Dec 1, 2026; final Jun 30, 2027. Chrome check 2026-11-15: Open. Next review date Dec 1, 2026; final date Jun 30, 2027."
   },
   {
    "id": "fresno-va-em-chief",
@@ -1227,7 +1227,7 @@
    "gap": "Generic exam, not a specific EM vacancy.",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: Open continuous on governmentjobs.com: Chief Physician I $240,684–$748,248 (job 2914957), Chief Physician II $247,320–$768,792 (2915002). Physician Specialist (2914495), Senior Physician (2914624) and Relief Physician (2914571) lists also open. These are the lists Harbor hires from."
   },
   {
@@ -1244,7 +1244,7 @@
    "gap": "Requires PhD-level research record, sustained federal funding and graduate teaching.",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": ""
   },
   {
@@ -1261,7 +1261,7 @@
    "gap": "Per diem; San Bernardino County.",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: Open on Marit, posted 9 days ago."
   },
   {
@@ -1312,7 +1312,7 @@
    "gap": "For-profit; pay not listed.",
    "status": "open",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: Aggregator (Powderkeg) still shows Apply; not confirmed on employer site."
   },
   {
@@ -1344,10 +1344,10 @@
    "posted": "",
    "fit": "Remote clinical governance role at a digital health company using AI insights.",
    "gap": "For-profit; population-health focus.",
-   "status": "open",
+   "status": "closed",
    "first_seen": "2026-10-27",
-   "last_seen": "2026-11-15",
-   "note": "Chrome check 2026-11-15: Aggregator still shows Apply; not confirmed on employer site."
+   "last_seen": "2026-11-24",
+   "note": "Chrome check 2026-11-24: Listing page removed; marked closed. Chrome check 2026-11-15: Aggregator still shows Apply; not confirmed on employer site."
   },
   {
    "id": "yo-ai-labs-physician-expert",
@@ -1380,7 +1380,7 @@
    "gap": "role centers on running the simulation lab, which is not his background",
    "status": "open",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: Open on PracticeMatch (simulation lab faculty medical director, Bakersfield)."
   },
   {
@@ -1397,7 +1397,7 @@
    "gap": "pay not listed; short-term project",
    "status": "open",
    "first_seen": "2026-10-28",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: Open on Ashby."
   },
   {
@@ -1431,7 +1431,7 @@
    "gap": "part-time clinical ad with no stated admin time; long-open posting may be filled at any time",
    "status": "open",
    "first_seen": "2026-10-29",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": ""
   },
   {
@@ -1448,7 +1448,7 @@
    "gap": "wants prior team leadership in telehealth and virtual-care experience; for-profit ends PSLF",
    "status": "open",
    "first_seen": "2026-10-31",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: Open on Ashby."
   },
   {
@@ -1483,7 +1483,7 @@
    "gap": "UML line expects scholarship; precision-EM research focus favored",
    "status": "open",
    "first_seen": "2026-11-04",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": ""
   },
   {
@@ -1500,7 +1500,7 @@
    "gap": "Wants a track record running an automation portfolio and measuring ROI. Pay tops out near $307K and offers are expected at or below midpoint, well under $350K, so pay is a gap to negotiate.",
    "status": "open",
    "first_seen": "2026-11-05",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: Open on UCLA Health careers (Job #32680), $132,300–$307,100."
   },
   {
@@ -1551,7 +1551,7 @@
    "gap": "pay and length not confirmed",
    "status": "open",
    "first_seen": "2026-11-08",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: Open, posted Nov 13, 2026."
   },
   {
@@ -1568,7 +1568,7 @@
    "gap": "requires a master's in statistics, epidemiology or health services research plus 3+ years of health-plan/QI and team-lead experience; for-profit ends PSLF",
    "status": "open",
    "first_seen": "2026-11-10",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": ""
   },
   {
@@ -1585,7 +1585,7 @@
    "gap": "Per diem, so no FTE to negotiate; immediate fill",
    "status": "open",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": ""
   },
   {
@@ -1602,7 +1602,7 @@
    "gap": "FTE and pay not stated; looks shift-based with no admin time",
    "status": "open",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: Open on UCI careers."
   },
   {
@@ -1619,7 +1619,7 @@
    "gap": "Wants ultrasound fellowship training, which he lacks; final date Aug 5, 2027",
    "status": "open",
    "first_seen": "2026-11-11",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": ""
   },
   {
@@ -1636,7 +1636,7 @@
    "gap": "",
    "status": "open",
    "first_seen": "2026-11-14",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: Open."
   },
   {
@@ -1653,7 +1653,7 @@
    "gap": "Outside the three counties; Assistant-rank base is below $350K before incentives",
    "status": "open",
    "first_seen": "2026-11-15",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": ""
   },
   {
@@ -1670,7 +1670,7 @@
    "gap": "Requires 8+ years of physician leadership in clinical AI/informatics and 5 years as a CMIO-level executive; far above the bar for a 2027 graduate. Useful as a contact once filled.",
    "status": "open",
    "first_seen": "2026-11-15",
-   "last_seen": "2026-11-15",
+   "last_seen": "2026-11-24",
    "note": "Chrome check 2026-11-15: Open on UCSF careers site."
   },
   {
@@ -1687,8 +1687,8 @@
    "gap": "Pure clinical, no informatics component; announcement closes 12/04/2026, far ahead of a July 2027 start — watch for a repost in spring 2027.",
    "status": "open",
    "first_seen": "2026-11-15",
-   "last_seen": "2026-11-15",
-   "note": "Verified on USAJobs 2026-11-15: open 11/03/2026–12/04/2026, direct hire. Federal employer, PSLF yes.",
+   "last_seen": "2026-11-24",
+   "note": "Chrome check 2026-11-24: Still open on USAJobs; closes Dec 4, 2026. Verified on USAJobs 2026-11-15: open 11/03/2026–12/04/2026, direct hire. Federal employer, PSLF yes.",
    "seeded": false
   },
   {
@@ -1705,7 +1705,7 @@
    "gap": "Pay and posting date not listed; up to 30 hrs/week, 1-month initial term.",
    "status": "open",
    "first_seen": "2026-11-22",
-   "last_seen": "2026-11-22",
+   "last_seen": "2026-11-24",
    "note": ""
   }
  ]
