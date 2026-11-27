@@ -1,13 +1,13 @@
 {
  "about": "Daily job watch for the curriculum site. Written by the pulse-pull Action from signed relay payloads; seeded 2026-10-21 from the manual search.",
  "last_run": {
-  "date": "2026-11-26",
-  "quiet": true,
-  "new": 0,
+  "date": "2026-11-27",
+  "quiet": false,
+  "new": 1,
   "updates": 0,
-  "items": 0
+  "items": 1
  },
- "checked_at": "2026-11-27T01:01:44Z",
+ "checked_at": "2026-11-27T13:47:22Z",
  "jobs": [
   {
    "id": "uci-jpf10379",
@@ -1706,6 +1706,23 @@
    "status": "open",
    "first_seen": "2026-11-22",
    "last_seen": "2026-11-24",
+   "note": ""
+  },
+  {
+   "id": "lumeris-medical-director-clinical-ai-product-development-and-validation",
+   "title": "Medical Director, Clinical AI, Product Development and Validation",
+   "employer": "Lumeris",
+   "location": "Remote (US)",
+   "employer_type": "for-profit",
+   "tier": "stretch",
+   "comp": "$203K–$295K (employer-provided, per Glassdoor)",
+   "url": "https://himalayas.app/companies/lumeris/jobs/medical-director-clinical-ai-product-development-and-validation",
+   "posted": "",
+   "fit": "Designing, testing and validating AI agent behavior and clinical decision-support logic is a direct match for your LLM evaluation and production clinical-AI validation work. Remote; search results showed it as freshly posted in late November (link not opened).",
+   "gap": "For-profit (ends PSLF); pay below academic informatics range; start date likely immediate.",
+   "status": "open",
+   "first_seen": "2026-11-27",
+   "last_seen": "2026-11-27",
    "note": ""
   }
  ]
